@@ -1,0 +1,84 @@
+﻿question,expected_points,generated_answer,factual_correctness_1_to_5,faithfulness_1_to_5,citation_support_1_to_5,answer_relevance_1_to_5,clarity_1_to_5,unsupported_claims_yes_no,abstention_appropriate_yes_no,review_comments
+What should I do if I receive a phishing email?,Urgency and too-good-to-be-true offers; protect credentials; caution with suspicious links/attachments; verify sender/domain and spelling; report phishing victimization.,"Answer:
+Based on the provided evidence, here are the actions you should take if you receive a phishing email:
+
+1. **Do not react to urgent messages or promotional offers:** Never react to messages displaying urgency, and do not trust promotional offers that seem ""too good to be true"" [Evidence 1, p. 4; Evidence 4, p. 4].
+2. **Do not share sensitive details:** Never provide sensitive details like passwords or PINs via email or text [Evidence 2, p. 4].
+3. **Be cautious with links and attachments:** 
+   - Do not click on any links or attachments from suspicious emails received from strangers [Evidence 2, p. 4; Evidence 5, p. 7].
+   - Carefully check and verify the URL before clicking [Evidence 1, p. 4; Evidence 4, p. 4].
+   - Expand and verify shortened URLs before clicking on them [Evidence 2, p. 4; Evidence 5, p. 7].
+4. **Inspect the email details:**
+   - Verify the sender and check the domain name in the sender's email address [Evidence 5, p. 7].
+   - Verify the email addresses in messages addressed to generic recipients [Evidence 1, p. 4].
+   - Look for typing errors, poor grammar, spelling mistakes, or unprofessional language [Evidence 1, p. 4; Evidence 2, p. 4; Evidence 5, p. 7].
+5. **Report if victimized:** Do not hesitate to report to Law Enforcement Agencies if you become a victim of phishing [Evidence 1, p. 4].
+
+*(Note: Evidence does not specify internal organizational incident reporting procedures, such as notifying an IT or security team, focusing instead on individual user safety tips and reporting to law enforcement if victimized.)*
+
+Sources:
+- Cyber Security Awareness Booklet | CERT-In | Page 4
+- Digital Safety Compass Handbook | CERT-In | Page 4
+- Cyber Security Handbook | CERT-In | Page 7",4,5,5,5,4,No,Yes,"The cited CERT-In pages support the advice, including the shortened-URL instruction (CERT-In 2025 p.4 says to expand and verify shortened URLs before clicking; CERT-In 2024 p.7 says not to click shortened URLs without verifying them by expanding). Sender/domain, urgency, suspicious attachments, sensitive details, spelling/grammar and law-enforcement reporting are supported. Slight deduction for wording 'verify URL before clicking' which could be interpreted as interacting with a suspicious link; safer phrasing would be to verify via a trusted method without opening it. No material unsupported claim."
+How can I protect my online accounts using multi-factor authentication?,Enable MFA; apply it to important accounts; do not disclose OTPs; state evidence limits around method-specific setup.,"Answer:
+Based on the provided evidence, you can protect your online accounts using multi-factor authentication (MFA) by doing the following:
+
+1. **Enable Multi-Factor Authentication (MFA)** to add an extra layer of security to your accounts [Evidence 1, p. 10], [Evidence 4, p. 14].
+2. **Apply it to critical personal accounts**, specifically by enabling it on your emails, banking, and social media accounts [Evidence 2, p. 9], [Evidence 3, p. 7], [Evidence 5, p. 8].
+3. **Never share your One-Time Password (OTP)** over the phone or internet, as banks and financial institutions will never ask for it [Evidence 2, p. 9].
+
+*(Note: The provided evidence states that multi-factor authentication should be enabled across your accounts, but it does not contain technical instructions or step-by-step setup guides for configuring specific MFA methods.)*
+
+Sources:
+- Cyber Security Handbook | CERT-In | Page 10
+- Cyber Security Awareness Booklet | CERT-In | Page 9
+- Cyber Security Handbook | CERT-In | Page 7
+- Cyber Security Awareness Booklet | CERT-In | Page 14
+- Cyber Security Awareness Booklet | CERT-In | Page 8",4,4,3,5,5,Yes,Yes,"Generic MFA recommendation is supported by CERT-In 2024 p.10; MFA on social media is explicitly supported by CERT-In 2023 p.8; MFA on email is supported by CERT-In 2024 p.7. OTP non-disclosure is supported by CERT-In 2023 p.9. However, the claim that MFA should specifically be enabled on banking accounts is not clearly supported by the cited retrieved pages, and some citations (e.g. CERT-In 2023 p.9 and CERT-In 2024 p.7) support OTP/email security rather than all account categories. The note about lack of technical setup steps is reasonable."
+How should passwords be stored securely?,Do not store plaintext passwords; prefer adaptive password hashing; avoid fast hashes; use unique salts; optional pepper kept separately; PBKDF2 guidance only in appropriate context.,"Answer:
+Based on the provided evidence, passwords should be stored securely using the following practices:
+
+1. **Never store in plaintext or encrypted form**: Passwords must never be stored in plain text [Evidence 1, p. 1]. In almost all circumstances, they should be securely hashed rather than encrypted [Evidence 2, p. 1], and alternative architectures should be used to avoid storing passwords in an encrypted form [Evidence 5, p. 2].
+2. **Use strong, slow, adaptive hashing algorithms**: Protect passwords using modern, slow, and memory-hard hashing algorithms such as Argon2id, bcrypt, or PBKDF2 [Evidence 1, p. 1; Evidence 2, p. 1]. Fast hashing algorithms like SHA-256 must not be used because they allow attackers to quickly make large numbers of guesses [Evidence 1, p. 1]. If using PBKDF2, configure it with a work factor of 600,000 or more and an internal hash function of HMAC-SHA-256 [Evidence 2, p. 1].
+3. **Apply a unique salt**: Add a unique salt to each password to stop attackers from utilizing precomputed lookup tables, such as rainbow tables [Evidence 1, p. 1; Evidence 4, p. 3].
+4. **Consider using a pepper for defense in depth**: 
+   - A pepper can provide additional defense in depth [Evidence 2, p. 1].
+   - Unlike a salt, a pepper is shared across stored passwords, must not be public, and must not be stored along with the generated hash or in the password database [Evidence 4, p. 3].
+   - Peppers are secrets and should be stored separately in ""secrets vaults"" or Hardware Security Modules (HSMs) [Evidence 4, p. 3].
+
+Sources:
+- Password Storage Cheat Sheet | OWASP | Page 1
+- Password Storage Cheat Sheet | OWASP | Page 2
+- Password Storage Cheat Sheet | OWASP | Page 3",4,4,5,5,5,Yes,Yes,"Strongly supported by OWASP Password Storage Cheat Sheet pp.1-3: Argon2id/bcrypt/PBKDF2, unique salts, avoiding fast SHA-256, PBKDF2 600,000+ with HMAC-SHA-256 when FIPS-140 compliance is required, and pepper storage in a secrets vault/HSM. Important overstatement: 'Never store in plaintext or encrypted form' is too absolute. OWASP p.2 says passwords should almost always be hashed, but describes exceptional cases where encryption may be necessary; it recommends alternative architecture where possible. The answer omits the FIPS-140 condition on PBKDF2."
+What are the steps involved in responding to a cybersecurity incident?,NIST CSF 2.0 functions; preparation/governance; detection; triage; coordination; containment/eradication/recovery; communication; lessons learned; clarify organizational scope.,"Answer:
+Based on the provided evidence, organizational incident response is integrated across operations using the NIST Cybersecurity Framework functions and involves the following steps and activities:
+
+1. **Preparation and Prevention**: Use the Govern, Identify, and Protect functions to prevent incidents, prepare to handle incidents that occur, reduce their impact, and improve practices [Evidence 2, p. 9]. Establish policies, documented procedures, defined roles/responsibilities, and guidelines for actions such as prioritization and recovery [Evidence 5, p. 17].
+2. **Detection and Reporting**: Discover incidents using detection technologies that automatically report confirmed incidents, or receive reports through monitored reporting mechanisms established for third parties [Evidence 2, p. 9; Evidence 3, p. 35].
+3. **Triage and Validation**: Perform a preliminary review of incident reports to verify that an incident occurred, and estimate the severity and level of urgency required to respond [Evidence 3, p. 35; Evidence 5, p. 17].
+4. **Coordination and Plan Execution**: When an incident is declared, execute plans in coordination with relevant third parties, consider designating an incident lead, contact incident response service providers if assistance is needed, and initiate other plans (such as business continuity or disaster recovery) [Evidence 3, p. 35].
+5. **Containment, Eradication, and Recovery**: Take appropriate action to manage, prioritize, contain, eradicate, and systematically recover from the incident to minimize data loss, theft, service disruptions, and overall impact [Evidence 1, p. 10; Evidence 2, p. 9].
+6. **Communications and Notifications**: Perform incident reporting, notification, and other incident-related communications [Evidence 2, p. 9].
+7. **Lessons Learned and Root Cause Analysis**: Analyze root causes and extract lessons learned. These lessons should often be shared as soon as they are identified (rather than waiting until recovery concludes) to support continuous improvement in cybersecurity risk management [Evidence 1, p. 10; Evidence 2, p. 9; Evidence 4, p. 12].
+
+*(Note: The provided evidence details organizational incident response; evidence for individual user incident response steps is not provided.)*
+
+Sources:
+- Incident Response Recommendations | NIST | Page 9
+- Incident Response Recommendations | NIST | Page 10
+- Incident Response Recommendations | NIST | Page 12
+- Incident Response Recommendations | NIST | Page 17
+- Incident Response Recommendations | NIST | Page 35",4,4,4,5,4,No,Yes,"The organizational framing is appropriate and NIST SP 800-61r3 supports the CSF functions and preparation/prevention, detection/response/recovery, communications and lessons learned (especially printed pp.1-2 / PDF pp.9-10 and PDF p.12). NIST PDF p.35 supports coordination with third parties and incident-plan execution; PDF p.17 supports documented roles, severity/prioritization and recovery procedures. The answer is a reasonable synthesis rather than a strict linear universal sequence; it should explicitly say these are connected activities, not necessarily a fixed seven-step sequence. Citation mapping is broadly appropriate."
+What should I do if my account has been compromised?,Recognize evidence insufficient for full personal recovery procedure; explain MFA failed-login signal and recovery options; official-channel scam advice; avoid presenting organizational guidance as personal procedure.,"Answer:
+The provided evidence is insufficient to give a complete step-by-step procedure for what an individual should do once an account is compromised. Specifically, direct recovery actions (such as changing passwords, revoking active sessions, or notifying administrators) are missing from the texts.
+
+However, the provided evidence notes the following relevant details:
+1. **Handling MFA and recovery:** When a user enters a correct password but fails MFA, it may indicate the password has been compromised; system guidance recommends prompting the user to try another form of MFA [Evidence 1, p. 4]. Additionally, systems must provide mechanisms for users to regain access if locked out without allowing attackers to bypass MFA (such as using single-use recovery codes generated during setup) [Evidence 5, p. 5].
+2. **Scam awareness:** Scammers may falsely claim that your bank or online accounts are hacked to cause panic; if in doubt, contact the organization directly using official channels and never share login details over the phone [Evidence 3, p. 9].
+3. **Organizational incident response:** Organizations should maintain incident response policies, processes, and procedures to govern their response to cybersecurity incidents, including management commitment, purpose, objectives, and scope [Evidence 2, p. 16].
+
+Sources:
+- Multifactor Authentication Cheat Sheet | OWASP | Page 4
+- Incident Response Recommendations | NIST | Page 16
+- Digital Safety Compass Handbook | CERT-In | Page 9
+- Multifactor Authentication Cheat Sheet | OWASP | Page 5",4,4,3,4,5,Yes,Yes,"The abstention is appropriate: the retrieved evidence does not provide a complete individual account-recovery checklist. OWASP MFA PDF p.4 supports the failed-password/successful-password-but-failed-second-factor risk signal and trying another MFA method; p.5 supports recovery codes and safe MFA reset. CERT-In 2025 p.9 supports official-channel verification and not sharing login details over the phone. However, the NIST citation to PDF p.16 does not support the stated claim about maintaining incident response policies; that topic is covered elsewhere in NIST (the cited retrieved chunk at p.16 discusses roles/third parties). Also the recovery-code sentence is about regaining access when MFA factors are unavailable, not a direct post-compromise recovery procedure."

@@ -1,0 +1,27 @@
+[
+  {
+    "query": "What should I do if I receive a phishing email?",
+    "expected_sources": ["CERTIN_2023"],
+    "expected_topics": ["phishing", "suspicious links"]
+  },
+  {
+    "query": "How can I protect my online accounts using multi-factor authentication?",
+    "expected_sources": ["OWASP_MFA", "OWASP_AUTH"],
+    "expected_topics": ["MFA", "authentication factors"]
+  },
+  {
+    "query": "What should I do if my account has been compromised?",
+    "expected_sources": ["OWASP_AUTH", "OWASP_SESSION"],
+    "expected_topics": ["account recovery", "session invalidation"]
+  },
+  {
+    "query": "How should passwords be stored securely?",
+    "expected_sources": ["OWASP_PASSWORD"],
+    "expected_topics": ["password hashing", "salting", "Argon2id"]
+  },
+  {
+    "query": "What are the steps involved in responding to a cybersecurity incident?",
+    "expected_sources": ["NIST_800_61R3"],
+    "expected_topics": ["incident response", "Detect", "Respond", "Recover"]
+  }
+]

@@ -1,0 +1,41 @@
+query,strategy,method,relevant_chunk_count,retrieved_chunk_count,precision_at_5,recall_at_5,mrr,ndcg_at_5
+What should I do if I receive a phishing email?,fixed,Dense,4,5,0.8,1.0,1.0,0.9828920819566879
+What should I do if I receive a phishing email?,fixed,BM25,4,5,0.2,0.25,0.25,0.16812753627111746
+What should I do if I receive a phishing email?,fixed,Hybrid RRF,4,5,0.6,0.75,1.0,0.7365896932159578
+What should I do if I receive a phishing email?,fixed,Hybrid + Cross-Encoder,4,5,0.8,1.0,1.0,0.9558295932317544
+How can I protect my online accounts using multi-factor authentication?,fixed,Dense,5,5,0.8,0.8,1.0,0.8687949224876582
+How can I protect my online accounts using multi-factor authentication?,fixed,BM25,5,5,0.4,0.4,0.5,0.36005461457723403
+How can I protect my online accounts using multi-factor authentication?,fixed,Hybrid RRF,5,5,0.6,0.6,1.0,0.6548086577531307
+How can I protect my online accounts using multi-factor authentication?,fixed,Hybrid + Cross-Encoder,5,5,0.4,0.4,1.0,0.5531464700081437
+What should I do if my account has been compromised?,fixed,Dense,2,5,0.0,0.0,0.0,0.0
+What should I do if my account has been compromised?,fixed,BM25,2,5,0.4,1.0,0.25,0.5012658353418871
+What should I do if my account has been compromised?,fixed,Hybrid RRF,2,5,0.0,0.0,0.0,0.0
+What should I do if my account has been compromised?,fixed,Hybrid + Cross-Encoder,2,5,0.4,1.0,1.0,0.8503449055347546
+How should passwords be stored securely?,fixed,Dense,6,5,0.6,0.5,1.0,0.6548086577531307
+How should passwords be stored securely?,fixed,BM25,6,5,0.8,0.6666666666666666,1.0,0.8539316501572937
+How should passwords be stored securely?,fixed,Hybrid RRF,6,5,0.8,0.6666666666666666,1.0,0.8687949224876582
+How should passwords be stored securely?,fixed,Hybrid + Cross-Encoder,6,5,1.0,0.8333333333333334,1.0,1.0
+What are the steps involved in responding to a cybersecurity incident?,fixed,Dense,8,5,1.0,0.625,1.0,1.0
+What are the steps involved in responding to a cybersecurity incident?,fixed,BM25,8,5,0.6,0.375,1.0,0.7227265726449519
+What are the steps involved in responding to a cybersecurity incident?,fixed,Hybrid RRF,8,5,1.0,0.625,1.0,1.0
+What are the steps involved in responding to a cybersecurity incident?,fixed,Hybrid + Cross-Encoder,8,5,1.0,0.625,1.0,1.0
+What should I do if I receive a phishing email?,recursive,Dense,4,5,0.8,1.0,1.0,0.9828920819566879
+What should I do if I receive a phishing email?,recursive,BM25,4,5,0.2,0.25,0.25,0.16812753627111746
+What should I do if I receive a phishing email?,recursive,Hybrid RRF,4,5,0.6,0.75,1.0,0.7365896932159578
+What should I do if I receive a phishing email?,recursive,Hybrid + Cross-Encoder,4,5,0.8,1.0,1.0,0.9828920819566879
+How can I protect my online accounts using multi-factor authentication?,recursive,Dense,4,5,0.6,0.75,1.0,0.8318724637288826
+How can I protect my online accounts using multi-factor authentication?,recursive,BM25,4,5,0.2,0.25,0.5,0.24630238874073
+How can I protect my online accounts using multi-factor authentication?,recursive,Hybrid RRF,4,5,0.6,0.75,1.0,0.75369761125927
+How can I protect my online accounts using multi-factor authentication?,recursive,Hybrid + Cross-Encoder,4,5,0.2,0.25,1.0,0.3903800499921017
+What should I do if my account has been compromised?,recursive,Dense,1,5,0.0,0.0,0.0,0.0
+What should I do if my account has been compromised?,recursive,BM25,1,5,0.2,1.0,0.3333333333333333,0.5
+What should I do if my account has been compromised?,recursive,Hybrid RRF,1,5,0.0,0.0,0.0,0.0
+What should I do if my account has been compromised?,recursive,Hybrid + Cross-Encoder,1,5,0.0,0.0,0.0,0.0
+How should passwords be stored securely?,recursive,Dense,8,5,0.6,0.375,1.0,0.6548086577531307
+How should passwords be stored securely?,recursive,BM25,8,5,1.0,0.625,1.0,1.0
+How should passwords be stored securely?,recursive,Hybrid RRF,8,5,0.8,0.5,1.0,0.8687949224876582
+How should passwords be stored securely?,recursive,Hybrid + Cross-Encoder,8,5,1.0,0.625,1.0,1.0
+What are the steps involved in responding to a cybersecurity incident?,recursive,Dense,6,5,0.6,0.5,1.0,0.6992148198508501
+What are the steps involved in responding to a cybersecurity incident?,recursive,BM25,6,5,0.6,0.5,1.0,0.6992148198508501
+What are the steps involved in responding to a cybersecurity incident?,recursive,Hybrid RRF,6,5,0.8,0.6666666666666666,1.0,0.8687949224876582
+What are the steps involved in responding to a cybersecurity incident?,recursive,Hybrid + Cross-Encoder,6,5,1.0,0.8333333333333334,1.0,1.0

@@ -1,0 +1,6 @@
+query,point_coverage,covered_points,total_points,citation_accuracy,valid_citations,invalid_citations,total_citations,expected_abstention,detected_abstention,abstention_correct,latency_seconds
+What should I do if I receive a phishing email?,1.0,5,5,1.0,4,0,4,False,False,True,134.66
+How can I protect my online accounts using multi-factor authentication?,1.0,4,4,1.0,6,0,6,False,False,True,74.32
+How should passwords be stored securely?,1.0,5,5,1.0,8,0,8,False,False,True,112.8
+What are the steps involved in responding to a cybersecurity incident?,1.0,7,7,1.0,4,0,4,False,False,True,142.11
+What should I do if my account has been compromised?,1.0,4,4,1.0,4,0,4,True,True,True,88.13

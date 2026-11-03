@@ -1,0 +1,75 @@
+[
+  {
+    "query": "What should I do if I receive a phishing email?",
+    "relevant_chunk_ids": [
+      "CERTIN_2023_P4_FIXED_002",
+      "CERTIN_2023_P4_FIXED_001",
+      "CERTIN_2025_P4_FIXED_001",
+      "CERTIN_2024_P7_FIXED_001",
+      "CERTIN_2023_P4_RECURSIVE_002",
+      "CERTIN_2023_P4_RECURSIVE_001",
+      "CERTIN_2025_P4_RECURSIVE_001",
+      "CERTIN_2024_P7_RECURSIVE_001"
+    ]
+  },
+  {
+    "query": "How can I protect my online accounts using multi-factor authentication?",
+    "relevant_chunk_ids": [
+      "CERTIN_2024_P10_FIXED_001",
+      "CERTIN_2023_P9_FIXED_002",
+      "OWASP_AUTH_P11_FIXED_001",
+      "OWASP_MFA_P6_FIXED_001",
+      "OWASP_MFA_P6_FIXED_002",
+      "CERTIN_2024_P10_RECURSIVE_001",
+      "OWASP_AUTH_P11_RECURSIVE_001",
+      "OWASP_MFA_P6_RECURSIVE_001",
+      "OWASP_MFA_P1_RECURSIVE_002"
+    ]
+  },
+  {
+    "query": "What should I do if my account has been compromised?",
+    "relevant_chunk_ids": [
+      "OWASP_MFA_P4_FIXED_003",
+      "OWASP_MFA_P5_FIXED_002",
+      "NIST_800_61R3_P36_RECURSIVE_003"
+    ]
+  },
+  {
+    "query": "How should passwords be stored securely?",
+    "relevant_chunk_ids": [
+      "OWASP_PASSWORD_P1_FIXED_001",
+      "OWASP_PASSWORD_P1_FIXED_003",
+      "OWASP_PASSWORD_P2_FIXED_002",
+      "OWASP_PASSWORD_P3_FIXED_003",
+      "OWASP_PASSWORD_P5_FIXED_001",
+      "OWASP_AUTH_P4_FIXED_001",
+      "OWASP_PASSWORD_P1_RECURSIVE_001",
+      "OWASP_PASSWORD_P1_RECURSIVE_003",
+      "OWASP_PASSWORD_P2_RECURSIVE_002",
+      "OWASP_PASSWORD_P3_RECURSIVE_003",
+      "OWASP_PASSWORD_P4_RECURSIVE_001",
+      "OWASP_PASSWORD_P5_RECURSIVE_001",
+      "OWASP_AUTH_P4_RECURSIVE_001",
+      "OWASP_AUTH_P4_RECURSIVE_002"
+    ]
+  },
+  {
+    "query": "What are the steps involved in responding to a cybersecurity incident?",
+    "relevant_chunk_ids": [
+      "NIST_800_61R3_P10_FIXED_004",
+      "NIST_800_61R3_P9_FIXED_001",
+      "NIST_800_61R3_P12_FIXED_003",
+      "NIST_800_61R3_P17_FIXED_001",
+      "NIST_800_61R3_P17_FIXED_002",
+      "NIST_800_61R3_P35_FIXED_002",
+      "NIST_800_61R3_P36_FIXED_003",
+      "NIST_800_61R3_P38_FIXED_002",
+      "NIST_800_61R3_P13_RECURSIVE_002",
+      "NIST_800_61R3_P35_RECURSIVE_002",
+      "NIST_800_61R3_P38_RECURSIVE_002",
+      "NIST_800_61R3_P17_RECURSIVE_001",
+      "NIST_800_61R3_P17_RECURSIVE_002",
+      "NIST_800_61R3_P36_RECURSIVE_003"
+    ]
+  }
+]

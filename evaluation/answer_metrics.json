@@ -1,0 +1,92 @@
+{
+    "evaluation_type": "Automated heuristic evaluation",
+    "notes": [
+        "Point coverage uses lexical token overlap.",
+        "Citation validation checks evidence index and page.",
+        "Citation validity does not prove semantic support.",
+        "Abstention detection uses predefined text patterns.",
+        "Faithfulness and semantic correctness require manual review."
+    ],
+    "summary": {
+        "total_questions": 5,
+        "average_point_coverage": 1.0,
+        "average_question_citation_accuracy": 1.0,
+        "overall_citation_accuracy": 1.0,
+        "abstention_accuracy": 1.0,
+        "average_generation_latency_seconds": 110.4,
+        "total_citations": 26,
+        "valid_citations": 26
+    },
+    "question_results": [
+        {
+            "query": "What should I do if I receive a phishing email?",
+            "point_coverage": 1.0,
+            "covered_points": 5,
+            "total_points": 5,
+            "citation_accuracy": 1.0,
+            "valid_citations": 4,
+            "invalid_citations": 0,
+            "total_citations": 4,
+            "expected_abstention": false,
+            "detected_abstention": false,
+            "abstention_correct": true,
+            "latency_seconds": 134.66
+        },
+        {
+            "query": "How can I protect my online accounts using multi-factor authentication?",
+            "point_coverage": 1.0,
+            "covered_points": 4,
+            "total_points": 4,
+            "citation_accuracy": 1.0,
+            "valid_citations": 6,
+            "invalid_citations": 0,
+            "total_citations": 6,
+            "expected_abstention": false,
+            "detected_abstention": false,
+            "abstention_correct": true,
+            "latency_seconds": 74.32
+        },
+        {
+            "query": "How should passwords be stored securely?",
+            "point_coverage": 1.0,
+            "covered_points": 5,
+            "total_points": 5,
+            "citation_accuracy": 1.0,
+            "valid_citations": 8,
+            "invalid_citations": 0,
+            "total_citations": 8,
+            "expected_abstention": false,
+            "detected_abstention": false,
+            "abstention_correct": true,
+            "latency_seconds": 112.8
+        },
+        {
+            "query": "What are the steps involved in responding to a cybersecurity incident?",
+            "point_coverage": 1.0,
+            "covered_points": 7,
+            "total_points": 7,
+            "citation_accuracy": 1.0,
+            "valid_citations": 4,
+            "invalid_citations": 0,
+            "total_citations": 4,
+            "expected_abstention": false,
+            "detected_abstention": false,
+            "abstention_correct": true,
+            "latency_seconds": 142.11
+        },
+        {
+            "query": "What should I do if my account has been compromised?",
+            "point_coverage": 1.0,
+            "covered_points": 4,
+            "total_points": 4,
+            "citation_accuracy": 1.0,
+            "valid_citations": 4,
+            "invalid_citations": 0,
+            "total_citations": 4,
+            "expected_abstention": true,
+            "detected_abstention": true,
+            "abstention_correct": true,
+            "latency_seconds": 88.13
+        }
+    ]
+}

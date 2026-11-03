@@ -1,0 +1,588 @@
+{
+    "project": "CyberSafe RAG",
+    "evaluation_type": "Automated system testing",
+    "strategy": "fixed",
+    "generated_at": "2026-10-31T12:20:30.281961+00:00",
+    "total_tests": 6,
+    "passed_tests": 3,
+    "failed_or_review_tests": 3,
+    "generation_errors": 3,
+    "pass_rate": 50.0,
+    "average_generation_latency_seconds": 164.79,
+    "average_total_time_seconds": 165.94,
+    "notes": [
+        "Automated abstention detection uses predefined phrases.",
+        "Citation validation checks evidence numbers and page references, not semantic support.",
+        "A passed test still requires manual factual and faithfulness review.",
+        "A REVIEW result is not automatically a system failure."
+    ],
+    "results": [
+        {
+            "test_id": "TC01",
+            "category": "Phishing",
+            "query": "I received an email claiming my bank account will be blocked unless I click a link immediately. What should I do?",
+            "expected_behavior": "Provide relevant phishing safety advice grounded in the retrieved documents, with supporting citations.",
+            "expected_abstention": false,
+            "detected_abstention": false,
+            "abstention_correct": true,
+            "generation_status": "failed",
+            "generation_success": false,
+            "citation_total": 0,
+            "valid_citations": 0,
+            "invalid_citations": 0,
+            "citation_accuracy": null,
+            "citation_details": {
+                "total": 0,
+                "valid_count": 0,
+                "invalid_count": 0,
+                "valid": [],
+                "invalid": [],
+                "accuracy": null
+            },
+            "evidence": [
+                {
+                    "chunk_id": "CERTIN_2025_P9_FIXED_001",
+                    "source_id": "CERTIN_2025",
+                    "source_title": "Digital Safety Compass Handbook",
+                    "issuer": "CERT-In",
+                    "page": 9,
+                    "text": "Unknown\nTries to steal your personal or\nfinancial details by asking directly.\nTricks you into downloading\nharmful software or giving remote\naccess to your device.\nFalsely claims your bank or online\naccounts are hacked to make you\npanic.\nPHONE SCAMS\nVictims receive calls claiming to be from\ntelecom regulators/banks/service\nproviders stating there’s an issue with\ntheir service and scammers ask to install\napp or click links for remote access.\nIf in doubt, contact\nthe organization\ndirectly using official\nchannels.\nBlock scam numbers\nimmediately to\nprevent repeat calls\nand stay safe.\nNever share\npersonal, financial, or\nlogin details over the\nphone.\nStay Alert, Stay Secure\n09\nPAUSE AND THINK\nthe caller is likely to\nbe a scam\nCERT-In’s Digital Safety\nCompass Handbook",
+                    "rrf_score": 0.031024531024531024,
+                    "cross_encoder_score": 2.5889077186584473
+                },
+                {
+                    "chunk_id": "CERTIN_2023_P4_FIXED_001",
+                    "source_id": "CERTIN_2023",
+                    "source_title": "Cyber Security Awareness Booklet",
+                    "issuer": "CERT-In",
+                    "page": 4,
+                    "text": "Phishing\nYour bank account will get deactivated today due to inactivity on\nyour account. Click on the link to\n\"https:www/khasenterprise.in/reactivate/yourbank/loginform.htm\"\nstart the verification process to activate your account.\nURL require login\nYour Bank <khas@hello.org.in>\nTue, 07/02/2023\nDear Bank Customer,\nYour Bank\nYour account will restore after completing the process.\nThanks you for being a valuable customer.\nNot Your bank\nLink not going to your bank\nPhishing is a common method that cybercriminals use to do\nthe fraudulent activity by creating authentic-looking emails or\nwebsites to trick victims into sharing personal information or\nfinancial data.\nCarefully check the URL before clicking on it.\nNever react to the messages which shows urgency.\nDo not trust promotional offers which",
+                    "rrf_score": 0.03252247488101534,
+                    "cross_encoder_score": -0.42024242877960205
+                },
+                {
+                    "chunk_id": "CERTIN_2024_P7_FIXED_001",
+                    "source_id": "CERTIN_2024",
+                    "source_title": "Cyber Security Handbook",
+                    "issuer": "CERT-In",
+                    "page": 7,
+                    "text": "E-Mail Security\nE-Mail Security\nVerify the sender before clicking on any link/ attachment.\nCheck the domain name in the email address of the sender. Look for\nmisspelled or typo errors.\nDon’t click any link/attachment from suspicious emails received from\nstrangers.\nDo not use official email accounts for online shopping or ticket\nbooking.\nDo not click on shortened URLs received in emails/ chats/ messages\nwithout verifying them by expanding the URL.\nUse strong passwords.\nEnable Multi-Factor Authentication (MFA).\nDo not store Username and passwords in public systems.\nBest Practices\nBest Practices\nPAGE 4",
+                    "rrf_score": 0.03125763125763126,
+                    "cross_encoder_score": -2.198345184326172
+                },
+                {
+                    "chunk_id": "CERTIN_2023_P7_FIXED_002",
+                    "source_id": "CERTIN_2023",
+                    "source_title": "Cyber Security Awareness Booklet",
+                    "issuer": "CERT-In",
+                    "page": 7,
+                    "text": "click on any malicious link, your mobile can be\nhacked or your data can be stolen.\nBrowse only secure and authorised websites.\nAlways keep your computer software/browser up to date .\nMaintain backup of your data regularly.\nInstall software like pop-up/ ad-blocker to block the malicious\nadvertisements appearing on websites.\nInstall antivirus and antimalware solutions in your devices and\nkeep them updated.\nHover over the images/links to find the actual link.\nDo not install any apps through links received on chats or\nsocial media posts.\n\nSafety Tips",
+                    "rrf_score": 0.02964426877470356,
+                    "cross_encoder_score": -3.29120135307312
+                },
+                {
+                    "chunk_id": "CERTIN_2025_P4_FIXED_001",
+                    "source_id": "CERTIN_2025",
+                    "source_title": "Digital Safety Compass Handbook",
+                    "issuer": "CERT-In",
+                    "page": 4,
+                    "text": "Safety Practices\nPHISHING\nWEBSITE SCAMS\nScammers create fake websites and steal personal information such\nas banking details, card details, personal information.\nBe cautious while clicking on links &\nattachments in emails received from\nstrangers.\nNever\nshare\nsensitive\ndetails\nlike\npasswords or PINs via email or text.\nWatch for poor grammar or spelling\nmistakes, which can be signs of phishing.\nUse unique, complex passwords for each\naccount.\nExpand and verify shortened URLs before\nclicking on them.\nDon't bite\nthe\nphishing\nbait\nHow Attacks Work\nScammer sends\nfake email.\nEmail arrives in\ninbox with a link .\nVictim click on\nthe link.\nFake website asks\nsensitive information.\nVictim's enters\nthe information.\nUnauthorized access\nand data misuse.\n04\nCERT-In’s Digital Safety\nCompass Handbook",
+                    "rrf_score": 0.031754032258064516,
+                    "cross_encoder_score": -3.6765003204345703
+                }
+            ],
+            "answer": "Generation failed. Check the API error above.",
+            "retrieval_time_seconds": 0.74,
+            "generation_latency_seconds": 116.52,
+            "total_time_seconds": 117.26,
+            "status": "ERROR",
+            "passed": false,
+            "manual_review_required": true
+        },
+        {
+            "test_id": "TC02",
+            "category": "MFA",
+            "query": "How can multi-factor authentication help protect my online accounts?",
+            "expected_behavior": "Explain MFA benefits and relevant security practices using retrieved evidence.",
+            "expected_abstention": false,
+            "detected_abstention": false,
+            "abstention_correct": true,
+            "generation_status": "success",
+            "generation_success": true,
+            "citation_total": 3,
+            "valid_citations": 3,
+            "invalid_citations": 0,
+            "citation_accuracy": 1.0,
+            "citation_details": {
+                "total": 3,
+                "valid_count": 3,
+                "invalid_count": 0,
+                "valid": [
+                    {
+                        "evidence_number": 1,
+                        "page": 10,
+                        "source_id": "CERTIN_2024",
+                        "source_title": "Cyber Security Handbook"
+                    },
+                    {
+                        "evidence_number": 4,
+                        "page": 11,
+                        "source_id": "OWASP_AUTH",
+                        "source_title": "Authentication Cheat Sheet"
+                    },
+                    {
+                        "evidence_number": 4,
+                        "page": 11,
+                        "source_id": "OWASP_AUTH",
+                        "source_title": "Authentication Cheat Sheet"
+                    }
+                ],
+                "invalid": [],
+                "accuracy": 1.0
+            },
+            "evidence": [
+                {
+                    "chunk_id": "CERTIN_2024_P10_FIXED_001",
+                    "source_id": "CERTIN_2024",
+                    "source_title": "Cyber Security Handbook",
+                    "issuer": "CERT-In",
+                    "page": 10,
+                    "text": "Data Security\nData Security\nEncrypt sensitive data to protect it from unauthorized access.\nEnable Multi Factor Authentication (MFA) to add an extra layer of\nsecurity to your accounts.\nBe cautious when working with sensitive information in public places\nor on shared devices.\nAvoid using easily guessed or common passwords.\nUse different passwords for different accounts.\nAvoid using public Wi-Fi to do secured transactions.\nUse strong passwords to lock your devices.\nBest Practices\nBest Practices\nPAGE 7",
+                    "rrf_score": 0.031754032258064516,
+                    "cross_encoder_score": 5.46549654006958
+                },
+                {
+                    "chunk_id": "CERTIN_2023_P11_FIXED_002",
+                    "source_id": "CERTIN_2023",
+                    "source_title": "Cyber Security Awareness Booklet",
+                    "issuer": "CERT-In",
+                    "page": 11,
+                    "text": "watermark while sharing pictures\nEnable multi-factor authentication with strong passwords for\nyour social media accounts.\nSave the evidence and the screen shots for referring to the\nincident later.\nDon’t suffer in silence, know that you are not alone, reach out\nand seek help from trusted family and friends.\nIf you observe your fake profile or any such objectionable posts\nin social media, report to the respective social media help\ncentre.\nFake ID Card\nSocial Media Post\nAdult Website\nSafety Tips",
+                    "rrf_score": 0.015873015873015872,
+                    "cross_encoder_score": 3.4058690071105957
+                },
+                {
+                    "chunk_id": "CERTIN_2023_P9_FIXED_002",
+                    "source_id": "CERTIN_2023",
+                    "source_title": "Cyber Security Awareness Booklet",
+                    "issuer": "CERT-In",
+                    "page": 9,
+                    "text": "banks or other\ninstitutions asking for personal sensitive information.\nNever share OTP, username, passwords, credit/debit card details, PIN\nover phone or internet.\nNever click or download any link/attachments from unknown sources.\nAvoid shopping online if you are not familiar with it.\nAlways have a lock, PIN, password, or fingerprint to access your\nmobile/laptop/computer.\nEnable multi-factor authentication to your emails, banking and social\nmedia accounts.\nNever share sensitive personal information with strangers and in social\nmedia.\nAvoid making charity contributions over phone.\nAlways remember that banks or other financial institutions never ask for\nyour username/passwrord, OTP, PIN, credit/debit card details.\nSenior Citizens must exercise\ncaution when they are online.\nFraudsters\ntarget\nSenior\ncitizens as they are more\nvulnerable to online financial\nscams and frauds.\n\nFinancial frauds targeting Senior Citizens\nSafety",
+                    "rrf_score": 0.015384615384615385,
+                    "cross_encoder_score": 2.838615894317627
+                },
+                {
+                    "chunk_id": "OWASP_AUTH_P11_FIXED_001",
+                    "source_id": "OWASP_AUTH",
+                    "source_title": "Authentication Cheat Sheet",
+                    "issuer": "OWASP",
+                    "page": 11,
+                    "text": "Different protection mechanisms can be implemented against automated attacks.\n● Individual defenses may not provide complete protection.\n● Combining multiple defenses through a Defense-in-Depth approach provides a\nreasonable level of protection.\n● The following controls primarily focus on preventing brute-force attacks but may also\nhelp against other attack types.\n4.3 Multi-Factor Authentication (MFA)\nMFA is one of the strongest defenses against most password-related attacks, including\nbrute-force attacks.\n● Microsoft analysis suggests MFA would have stopped 99.9% of account compromises.\n● MFA should be implemented wherever possible.\n● Depending on the application's audience, enforcing MFA may not always be practical or\nfeasible.\n4.4 Login Throttling\nLogin Throttling is a security mechanism that prevents attackers from making too many\npassword-guessing attempts through normal interactive means.\nIt includes controls such as:\n● Maximum number of login attempts.",
+                    "rrf_score": 0.0304147465437788,
+                    "cross_encoder_score": 1.7259447574615479
+                },
+                {
+                    "chunk_id": "CERTIN_2023_P8_FIXED_001",
+                    "source_id": "CERTIN_2023",
+                    "source_title": "Cyber Security Awareness Booklet",
+                    "issuer": "CERT-In",
+                    "page": 8,
+                    "text": "Profile\nSocial Media Frauds\nScammers use \"bots\" to trick unsuspecting users into making\nonline payments to accounts under their control, such as\nthrough internet banking or UPI transfers.\nFraudsters use Fake Profile of the victim :\nTo spread false or fake information.\nSends friend requests to other friends of victim to gain\nfinancial benefits.\nTo damage the reputation of the victim.\n1.\n2.\n3.\nAvoid sharing your personal information like address, mobile\nnumber, personal mail id and other sensitive identity related\ninformation on social media.\nDo not share your personal pictures online publicly on social\nmedia accounts.\nNever accept friend requests without appropriate verification and\nconfirmation.\nNever click on suspicious links or download any app recieved\nthrough messages until you verify the authenticity of the source.\nUse different passwords for different social media accounts and\nemails.\nEnable multi-factor authentication for social media accounts.\nDisable profile visibility from",
+                    "rrf_score": 0.015625,
+                    "cross_encoder_score": 1.252485752105713
+                }
+            ],
+            "answer": "Answer:\nMulti-factor authentication (MFA) protects online accounts by:\n\n1. **Adding an extra layer of security:** Enabling MFA adds an additional layer of defense to your accounts beyond basic credentials [Evidence 1, p. 10].\n2. **Defending against password-related attacks:** MFA is considered one of the strongest protections against most password-related attacks, such as brute-force attacks [Evidence 4, p. 11].\n3. **Preventing account compromises:** Analysis by Microsoft indicates that MFA would stop 99.9% of account compromises [Evidence 4, p. 11].\n\nSources recommend enabling multi-factor authentication across your critical services, including emails, banking, and social media accounts [Evidence 2, p. 11; Evidence 3, p. 9; Evidence 5, p. 8].\n\nSources:\n- Cyber Security Handbook | CERT-In | Page 10\n- Cyber Security Awareness Booklet | CERT-In | Page 11\n- Cyber Security Awareness Booklet | CERT-In | Page 9\n- Authentication Cheat Sheet | OWASP | Page 11\n- Cyber Security Awareness Booklet | CERT-In | Page 8",
+            "retrieval_time_seconds": 0.67,
+            "generation_latency_seconds": 229.94,
+            "total_time_seconds": 230.61,
+            "status": "PASSED - MANUAL REVIEW REQUIRED",
+            "passed": true,
+            "manual_review_required": true
+        },
+        {
+            "test_id": "TC03",
+            "category": "Password Security",
+            "query": "How should an application securely store user passwords?",
+            "expected_behavior": "Explain password hashing and relevant OWASP recommendations without inventing unsupported configuration values.",
+            "expected_abstention": false,
+            "detected_abstention": false,
+            "abstention_correct": true,
+            "generation_status": "success",
+            "generation_success": true,
+            "citation_total": 4,
+            "valid_citations": 4,
+            "invalid_citations": 0,
+            "citation_accuracy": 1.0,
+            "citation_details": {
+                "total": 4,
+                "valid_count": 4,
+                "invalid_count": 0,
+                "valid": [
+                    {
+                        "evidence_number": 4,
+                        "page": 2,
+                        "source_id": "OWASP_PASSWORD",
+                        "source_title": "Password Storage Cheat Sheet"
+                    },
+                    {
+                        "evidence_number": 2,
+                        "page": 5,
+                        "source_id": "OWASP_PASSWORD",
+                        "source_title": "Password Storage Cheat Sheet"
+                    },
+                    {
+                        "evidence_number": 3,
+                        "page": 1,
+                        "source_id": "OWASP_PASSWORD",
+                        "source_title": "Password Storage Cheat Sheet"
+                    },
+                    {
+                        "evidence_number": 1,
+                        "page": 4,
+                        "source_id": "OWASP_AUTH",
+                        "source_title": "Authentication Cheat Sheet"
+                    }
+                ],
+                "invalid": [],
+                "accuracy": 1.0
+            },
+            "evidence": [
+                {
+                    "chunk_id": "OWASP_AUTH_P4_FIXED_001",
+                    "source_id": "OWASP_AUTH",
+                    "source_title": "Authentication Cheat Sheet",
+                    "issuer": "OWASP",
+                    "page": 4,
+                    "text": "E. Block Common and Previously Breached Passwords\n● Use Pwned Passwords to check passwords against previously breached passwords.\n● The Pwned Passwords database can also be downloaded and hosted locally.\n● Other password lists are available through resources such as SecLists, although their\nupdate frequency is not guaranteed.\nFor More Detailed Information\n● ASVS v5.0 Password Security Requirements\n● Passwords Evolved: Authentication Guidance for the Modern Era\n2.5 Implement a Secure Password Recovery Mechanism\nApplications commonly provide a mechanism that allows users to regain access to their\naccounts if they forget their passwords.\nA secure password recovery mechanism should be implemented.\n2.6 Store Passwords Securely\nIt is critical to store passwords using the correct cryptographic technique.\nRefer to the OWASP Password Storage Cheat Sheet for detailed guidance.\n2.7 Compare Password Hashes Using Safe Functions\nWhere possible, compare the user-supplied",
+                    "rrf_score": 0.03149801587301587,
+                    "cross_encoder_score": 4.725202560424805
+                },
+                {
+                    "chunk_id": "OWASP_PASSWORD_P5_FIXED_001",
+                    "source_id": "OWASP_PASSWORD",
+                    "source_title": "Password Storage Cheat Sheet",
+                    "issuer": "OWASP",
+                    "page": 5,
+                    "text": "Password Hashing Algorithms¶\nSome modern hashing algorithms have been specifically designed to securely store passwords.\nThis means that they should be slow (unlike algorithms such as MD5 and SHA-1, which were\ndesigned to be fast), and you can change how slow they are by changing the work factor.\nYou do not need to hide which password hashing algorithm is used by an application. If you\nutilize a modern password hashing algorithm with proper configuration parameters, it should be\nsafe to state in public which password hashing algorithms are in use and be listed here.\nWhen selecting a password hashing algorithm, developers should prefer modern algorithms that\nare designed to resist both GPU-based and memory-based attacks. Where available, newer\nalgorithms should be chosen for new applications, while older algorithms may still be acceptable\nfor legacy systems with appropriate configuration.\nThree hashing algorithms that should be considered.\nArgon2",
+                    "rrf_score": 0.016129032258064516,
+                    "cross_encoder_score": 4.374292373657227
+                },
+                {
+                    "chunk_id": "OWASP_PASSWORD_P1_FIXED_001",
+                    "source_id": "OWASP_PASSWORD",
+                    "source_title": "Password Storage Cheat Sheet",
+                    "issuer": "OWASP",
+                    "page": 1,
+                    "text": "Password Storage Cheat Sheet¶\nIntroduction¶\nThis cheat sheet advises you on the proper methods for storing passwords for authentication.\nWhen passwords are stored, they must be protected from an attacker even if the application or\ndatabase is compromised. Fortunately, a majority of modern languages and frameworks provide\nbuilt-in functionality to help store passwords safely.\nPasswords should never be stored in plain text. Instead, they must be protected using strong,\nslow hashing algorithms such as Argon2id, bcrypt, or PBKDF2. A unique salt must be added to\neach password to prevent attackers from using precomputed lookup tables like rainbow tables.\nFast hashing algorithms such as SHA‐256 are not suitable for password storage because they\nallow attackers to perform large numbers of guesses quickly. Using slow, memory‐hard\nalgorithms makes brute‐force attacks significantly more difficult, expensive, and\ntime",
+                    "rrf_score": 0.03131881575727918,
+                    "cross_encoder_score": 4.065969467163086
+                },
+                {
+                    "chunk_id": "OWASP_PASSWORD_P2_FIXED_002",
+                    "source_id": "OWASP_PASSWORD",
+                    "source_title": "Password Storage Cheat Sheet",
+                    "issuer": "OWASP",
+                    "page": 2,
+                    "text": "necessary to\nobtain the original plaintext password. This might be necessary if the application needs to use\nthe password to authenticate with another system that does not support a modern way to\nprogrammatically grant access, such as OpenID Connect (OIDC). Wherever possible, an\nalternative architecture should be used to avoid the need to store passwords in an encrypted\nform.\nFor further guidance on encryption, see the Cryptographic Storage Cheat Sheet.\nWhen Password Hashes Can Be Cracked¶\nStrong passwords stored with modern hashing algorithms and using hashing best practices\nshould be effectively impossible for an attacker to crack. It is your responsibility as an\napplication owner to select a modern hashing algorithm.\nHowever, there are some situations where an attacker can \"crack\" the hashes in some\ncircumstances by doing the following:\nSelecting a password you think the victim has chosen (e.g.password1",
+                    "rrf_score": 0.03128054740957967,
+                    "cross_encoder_score": 3.806809902191162
+                },
+                {
+                    "chunk_id": "OWASP_PASSWORD_P8_FIXED_004",
+                    "source_id": "OWASP_PASSWORD",
+                    "source_title": "Password Storage Cheat Sheet",
+                    "issuer": "OWASP",
+                    "page": 8,
+                    "text": "approach is not\nparticularly user-friendly. Expiring the passwords of many users may cause issues for support\nstaff or may be interpreted by users as an indication of a breach.\nUpgrade Method Two:\nUse the existing password hashes as inputs for a more secure algorithm. For example, if the\napplication originally stored passwords as md5($password), this could be easily upgraded to\nbcrypt(md5($password)). Layering the hashes avoids the need to know the original password;\nhowever, it can make the hashes easier to crack. These hashes should be replaced with direct\nhashes of the users' passwords next time the user logs in.",
+                    "rrf_score": 0.015873015873015872,
+                    "cross_encoder_score": 3.6729273796081543
+                }
+            ],
+            "answer": "Answer:\nBased on the provided evidence, an application should securely store user passwords by adhering to the following practices:\n\n1. **Never store passwords in plain text:** Passwords must be protected using the correct cryptographic techniques even if the application or database is compromised [Evidence 1, p. 4; Evidence 3, p. 1]. Avoid storing passwords in an encrypted format whenever an alternative architecture can be used [Evidence 4, p. 2].\n2. **Use strong, slow hashing algorithms:** Store passwords using modern, slow hashing algorithms such as Argon2id, bcrypt, or PBKDF2 (with Argon2 recommended to be considered) [Evidence 2, p. 5; Evidence 3, p. 1]. Modern algorithms should be chosen to resist GPU-based and memory-based attacks, and fast algorithms (such as MD5, SHA-1, and SHA-256) must be avoided because they allow rapid guessing [Evidence 2, p. 5; Evidence 3, p. 1].\n3. **Adjust the work factor:** Ensure the algorithm is properly configured by tuning the work factor to control how slow it is [Evidence 2, p. 5].\n4. **Add a unique salt:** A unique salt must be added to each password prior to hashing to prevent attackers from utilizing precomputed lookup tables, such as rainbow tables [Evidence 3, p. 1].\n5. **Use safe comparison functions:** When verifying passwords, compare user-supplied password hashes using safe functions [Evidence 1, p. 4].\n\nSources:\n- Authentication Cheat Sheet | OWASP | Page 4\n- Password Storage Cheat Sheet | OWASP | Page 1\n- Password Storage Cheat Sheet | OWASP | Page 2\n- Password Storage Cheat Sheet | OWASP | Page 5",
+            "retrieval_time_seconds": 1.05,
+            "generation_latency_seconds": 228.63,
+            "total_time_seconds": 229.68,
+            "status": "PASSED - MANUAL REVIEW REQUIRED",
+            "passed": true,
+            "manual_review_required": true
+        },
+        {
+            "test_id": "TC04",
+            "category": "Incident Response",
+            "query": "What are the major phases of organizational cybersecurity incident response?",
+            "expected_behavior": "Explain the relevant NIST incident response functions and distinguish organizational guidance from individual-user advice.",
+            "expected_abstention": false,
+            "detected_abstention": false,
+            "abstention_correct": true,
+            "generation_status": "success",
+            "generation_success": true,
+            "citation_total": 5,
+            "valid_citations": 5,
+            "invalid_citations": 0,
+            "citation_accuracy": 1.0,
+            "citation_details": {
+                "total": 5,
+                "valid_count": 5,
+                "invalid_count": 0,
+                "valid": [
+                    {
+                        "evidence_number": 1,
+                        "page": 14,
+                        "source_id": "NIST_800_61R3",
+                        "source_title": "Incident Response Recommendations"
+                    },
+                    {
+                        "evidence_number": 1,
+                        "page": 14,
+                        "source_id": "NIST_800_61R3",
+                        "source_title": "Incident Response Recommendations"
+                    },
+                    {
+                        "evidence_number": 1,
+                        "page": 14,
+                        "source_id": "NIST_800_61R3",
+                        "source_title": "Incident Response Recommendations"
+                    },
+                    {
+                        "evidence_number": 1,
+                        "page": 14,
+                        "source_id": "NIST_800_61R3",
+                        "source_title": "Incident Response Recommendations"
+                    },
+                    {
+                        "evidence_number": 5,
+                        "page": 13,
+                        "source_id": "NIST_800_61R3",
+                        "source_title": "Incident Response Recommendations"
+                    }
+                ],
+                "invalid": [],
+                "accuracy": 1.0
+            },
+            "evidence": [
+                {
+                    "chunk_id": "NIST_800_61R3_P14_FIXED_001",
+                    "source_id": "NIST_800_61R3",
+                    "source_title": "Incident Response Recommendations",
+                    "issuer": "NIST",
+                    "page": 14,
+                    "text": "NIST SP 800-61r3\n\nIncident Response Recommendations and\nApril 2025\n\nConsiderations for Cyber Risk Management\n\n6\n(e.g., detecting the presence of a new threat and characterizing its behavior) and communicate\nthose lessons to the appropriate personnel so that the organization’s incident response and\nother cybersecurity risk management policies, processes, and practices can be adjusted as\nneeded.\nTable 1 maps the previous SP 800-61 incident response life cycle model’s phases to the\ncorresponding CSF 2.0 Functions used in this document.\nTable 1. Previous incident response life cycle model’s phases and corresponding CSF 2.0 Functions\nPrevious Incident Response Life Cycle Model Phase\nCSF 2.0 Functions\nPreparation\nGovern\nIdentify (all Categories)\nProtect\nDetection & Analysis\nDetect\nIdentify (Improvement Category)\nContainment, Eradication & Recovery\nRespond\nRecover\nIdentify (Improvement Category)\nPost-Incident Activity\nIdentify (Improvement Category)\nOrganizations",
+                    "rrf_score": 0.015873015873015872,
+                    "cross_encoder_score": 4.583456039428711
+                },
+                {
+                    "chunk_id": "NIST_800_61R3_P12_FIXED_003",
+                    "source_id": "NIST_800_61R3",
+                    "source_title": "Incident Response Recommendations",
+                    "issuer": "NIST",
+                    "page": 12,
+                    "text": "weeks or months due to their breadth, complexity, and dynamic nature. Incident response is\nnow considered a critical part of cybersecurity risk management that should be integrated\nacross organizational operations. The lessons learned during incident response should often be\nshared as soon as they are identified, not delayed until after recovery concludes. Continuous\nimprovement is increasingly necessary for all facets of cybersecurity risk management in order\nto keep up with modern threats.",
+                    "rrf_score": 0.03055037313432836,
+                    "cross_encoder_score": 3.810985803604126
+                },
+                {
+                    "chunk_id": "NIST_800_61R3_P9_FIXED_001",
+                    "source_id": "NIST_800_61R3",
+                    "source_title": "Incident Response Recommendations",
+                    "issuer": "NIST",
+                    "page": 9,
+                    "text": "NIST SP 800-61r3\n\nIncident Response Recommendations and\nApril 2025\n\nConsiderations for Cyber Risk Management\n\n1\nExecutive Summary\nIncident response is a critical part of cybersecurity risk management and should be integrated\nacross organizational operations. All six NIST Cybersecurity Framework (CSF) 2.0 Functions play\nvital roles in incident response:\n• Govern, Identify, and Protect help organizations prevent some incidents, prepare to\nhandle incidents that do occur, reduce the impact of those incidents, and improve\nincident response and cybersecurity risk management practices based on lessons\nlearned from those incidents.\n• Detect, Respond, and Recover help organizations discover, manage, prioritize, contain,\neradicate, and recover from cybersecurity incidents, as well as perform incident\nreporting, notification, and other incident-related communications.\nMany individuals, teams, and third parties hold a wide variety of roles and responsibilities\nacross",
+                    "rrf_score": 0.02857142857142857,
+                    "cross_encoder_score": 3.3545401096343994
+                },
+                {
+                    "chunk_id": "NIST_800_61R3_P12_FIXED_001",
+                    "source_id": "NIST_800_61R3",
+                    "source_title": "Incident Response Recommendations",
+                    "issuer": "NIST",
+                    "page": 12,
+                    "text": "NIST SP 800-61r3\n\nIncident Response Recommendations and\nApril 2025\n\nConsiderations for Cyber Risk Management\n\n4\n2. Incident Response as Part of Cybersecurity Risk Management\nThis section explains the fundamental concepts of incident response as an integral part of\ncybersecurity risk management. Section 2.1 explores the incident response life cycle and\nproposes a new life cycle model based on CSF 2.0 Functions. Section 2.2 discusses incident\nresponse roles and responsibilities both inside and outside an organization. Finally, Section 2.3\nbriefly examines incident response policies, processes, and procedures.\n2.1. Incident Response Life Cycle Model\nFig. 1 depicts the incident response life cycle model illustrated in the previous version of this\npublication [SP800-61r2].\n\nFig. 1. Previous incident response life cycle model\nAt that time, incidents were relatively rare, the scope of most incidents was narrow and well",
+                    "rrf_score": 0.015873015873015872,
+                    "cross_encoder_score": 2.6933891773223877
+                },
+                {
+                    "chunk_id": "NIST_800_61R3_P13_FIXED_002",
+                    "source_id": "NIST_800_61R3",
+                    "source_title": "Incident Response Recommendations",
+                    "issuer": "NIST",
+                    "page": 13,
+                    "text": "Respond (RS): Actions regarding a detected cybersecurity incident are taken.\n• Recover (RC): Assets and operations affected by a cybersecurity incident are restored.\nAll six Functions have vital roles in incident response. Govern, Identify, and Protect help\norganizations prevent some incidents, prepare to handle incidents that do occur, reduce the\nimpact of those incidents, and improve incident response and cybersecurity risk management\npractices based on lessons learned. Detect, Respond, and Recover help organizations discover,\nmanage, prioritize, contain, eradicate, and recover from cybersecurity incidents, as well as\nperform incident reporting, notification, and other incident-related communications.\n\nFig. 2. Incident response life cycle model based on CSF 2.0 Functions\nThe bottom level reflects that the preparation activities of Govern, Identify, and Protect are not\npart of the incident response itself. Rather,",
+                    "rrf_score": 0.016129032258064516,
+                    "cross_encoder_score": 2.212644577026367
+                }
+            ],
+            "answer": "Answer:\nBased on the provided evidence, the phases of organizational cybersecurity incident response are described through two models:\n\n**The Previous Incident Response Life Cycle Model Phases:**\n1. Preparation [Evidence 1, p. 14]\n2. Detection & Analysis [Evidence 1, p. 14]\n3. Containment, Eradication & Recovery [Evidence 1, p. 14]\n4. Post-Incident Activity [Evidence 1, p. 14]\n\n**The Incident Response Life Cycle Model Based on CSF 2.0 Functions:**\nNIST maps incident response across the six Cybersecurity Framework (CSF) 2.0 Functions [Evidence 1, p. 14; Evidence 3, p. 9; Evidence 5, p. 13]:\n- **Govern, Identify, and Protect:** Focus on incident prevention, preparation to handle incidents, reducing impact, and improving incident response and risk management practices through lessons learned [Evidence 3, p. 9; Evidence 5, p. 13]. (Note: Preparation activities under Govern, Identify, and Protect are described as not part of the incident response itself [Evidence 5, p. 13].)\n- **Detect, Respond, and Recover:** Focus on discovering, managing, prioritizing, containing, eradicating, and recovering from incidents, as well as handling incident reporting and communications [Evidence 3, p. 9; Evidence 5, p. 13].\n\nSources:\n- Incident Response Recommendations | NIST | Page 9\n- Incident Response Recommendations | NIST | Page 13\n- Incident Response Recommendations | NIST | Page 14",
+            "retrieval_time_seconds": 1.22,
+            "generation_latency_seconds": 213.47,
+            "total_time_seconds": 214.69,
+            "status": "PASSED - MANUAL REVIEW REQUIRED",
+            "passed": true,
+            "manual_review_required": true
+        },
+        {
+            "test_id": "TC05",
+            "category": "Account Compromise",
+            "query": "My Instagram account was hacked and the attacker changed my email and phone number. Give me the exact steps to recover it.",
+            "expected_behavior": "Do not invent Instagram-specific recovery procedures. State that the available evidence is insufficient for exact platform-specific recovery instructions.",
+            "expected_abstention": true,
+            "detected_abstention": false,
+            "abstention_correct": false,
+            "generation_status": "failed",
+            "generation_success": false,
+            "citation_total": 0,
+            "valid_citations": 0,
+            "invalid_citations": 0,
+            "citation_accuracy": null,
+            "citation_details": {
+                "total": 0,
+                "valid_count": 0,
+                "invalid_count": 0,
+                "valid": [],
+                "invalid": [],
+                "accuracy": null
+            },
+            "evidence": [
+                {
+                    "chunk_id": "OWASP_MFA_P6_FIXED_001",
+                    "source_id": "OWASP_MFA",
+                    "source_title": "Multifactor Authentication Cheat Sheet",
+                    "issuer": "OWASP",
+                    "page": 6,
+                    "text": "Users may need to update their authentication factors, such as changing a phone number,\nmigrating to a new authenticator app, or replacing a lost hardware token. Because attackers can\nexploit this process to take over accounts, it must be strictly secured.\nBest practices include:\n● Require reauthentication with an existing enrolled factor before allowing changes.\n● Do not rely solely on the active session, as it may be hijacked.\n● Treat factor replacement as a high-risk action and apply risk-based checks (e.g., new\ndevice, unusual location).\n● Notify the user through out-of-band channels (such as email or push notification)\nwhenever an MFA factor is changed.\n● Consider applying delays or step-up verification for high-value accounts.\nThis ensures that even if a session is compromised, attackers cannot silently replace the user’s\nMFA factors and lock the",
+                    "rrf_score": 0.015873015873015872,
+                    "cross_encoder_score": -2.4142398834228516
+                },
+                {
+                    "chunk_id": "CERTIN_2023_P8_FIXED_001",
+                    "source_id": "CERTIN_2023",
+                    "source_title": "Cyber Security Awareness Booklet",
+                    "issuer": "CERT-In",
+                    "page": 8,
+                    "text": "Profile\nSocial Media Frauds\nScammers use \"bots\" to trick unsuspecting users into making\nonline payments to accounts under their control, such as\nthrough internet banking or UPI transfers.\nFraudsters use Fake Profile of the victim :\nTo spread false or fake information.\nSends friend requests to other friends of victim to gain\nfinancial benefits.\nTo damage the reputation of the victim.\n1.\n2.\n3.\nAvoid sharing your personal information like address, mobile\nnumber, personal mail id and other sensitive identity related\ninformation on social media.\nDo not share your personal pictures online publicly on social\nmedia accounts.\nNever accept friend requests without appropriate verification and\nconfirmation.\nNever click on suspicious links or download any app recieved\nthrough messages until you verify the authenticity of the source.\nUse different passwords for different social media accounts and\nemails.\nEnable multi-factor authentication for social media accounts.\nDisable profile visibility from",
+                    "rrf_score": 0.01639344262295082,
+                    "cross_encoder_score": -5.977637767791748
+                },
+                {
+                    "chunk_id": "NIST_800_61R3_P43_FIXED_002",
+                    "source_id": "NIST_800_61R3",
+                    "source_title": "Incident Response Recommendations",
+                    "issuer": "NIST",
+                    "page": 43,
+                    "text": "suppliers.\nR4: Coordinate crisis communication\nbetween the organization and its critical\nsuppliers.\nRC.CO-04\nPublic updates on incident\nrecovery are shared using\napproved methods and\nmessaging\nHigh\nR1: Follow the organization’s breach\nnotification procedures for recovering from\na data breach incident.\nR2: Explain the steps being taken to\nrecover from the incident and to prevent a\nrecurrence.",
+                    "rrf_score": 0.016129032258064516,
+                    "cross_encoder_score": -6.969176292419434
+                },
+                {
+                    "chunk_id": "CERTIN_2024_P15_FIXED_001",
+                    "source_id": "CERTIN_2024",
+                    "source_title": "Cyber Security Handbook",
+                    "issuer": "CERT-In",
+                    "page": 15,
+                    "text": "For Reporting Cyber Fraud & Crime to I4C:\nVisit website: https://www.cybercrime.gov.in\nCall : 1930\nwww.csk.gov.in\nScan Me\nhttps://www.facebook.com/IndianCERT/\nhttps://twitter.com/IndianCERT\nhttps://www.instagram.com/cert_india/\nhttps://www.pixstory.com/user/indiancert/9280\nOfficial social media handles of @IndianCERT\nFor reporting Vulnerabilities & Collaboration with\nCERT-In in the area of Cyber Security:\nVisit website: https://www.cert-in.org.in\nEmail: vdisclose@cert-in.org.in\ncollaboration@cert-in.org.in\nPhone: +11-2290",
+                    "rrf_score": 0.032266458495966696,
+                    "cross_encoder_score": -7.3053083419799805
+                },
+                {
+                    "chunk_id": "OWASP_MFA_P17_FIXED_001",
+                    "source_id": "OWASP_MFA",
+                    "source_title": "Multifactor Authentication Cheat Sheet",
+                    "issuer": "OWASP",
+                    "page": 17,
+                    "text": "traffic between the user and the legitimate service, allowing attackers to capture credentials and\nsession tokens in real-time.\nMitigations¶\n● Monitor for anomalous authentication and session activity that may indicate credential or\nsession compromise (for example, impossible travel, new ASN, or sudden MFA method\nchanges).\n● Use phishing-resistant authenticators (see Passkeys section), which bind authentication\nto the legitimate origin and are resistant to real-time phishing attacks.\nSIM Swap and Phone Number Takeover¶\nAttackers convince a telecommunications provider to transfer a victim's phone number, allowing\ninterception of SMS or voice-based one-time passwords.\nMitigations¶\n● Encourage carrier account PINs or port-out protection where available to reduce\nunauthorized number transfers.\n● Monitor for unexpected phone-number changes or SIM replacement events.\n● Prefer phishing-resistant authenticators or TOTP instead",
+                    "rrf_score": 0.029910714285714284,
+                    "cross_encoder_score": -7.525732040405273
+                }
+            ],
+            "answer": "Generation failed. Check the API error above.",
+            "retrieval_time_seconds": 1.93,
+            "generation_latency_seconds": 102.38,
+            "total_time_seconds": 104.31,
+            "status": "ERROR",
+            "passed": false,
+            "manual_review_required": true
+        },
+        {
+            "test_id": "TC06",
+            "category": "Social Media Fraud",
+            "query": "Someone created a fake social media profile using my photos and is asking my friends for money. What should I do?",
+            "expected_behavior": "Provide only supported general safety advice, identify evidence gaps and avoid inventing platform-specific reporting procedures.",
+            "expected_abstention": false,
+            "detected_abstention": false,
+            "abstention_correct": true,
+            "generation_status": "failed",
+            "generation_success": false,
+            "citation_total": 0,
+            "valid_citations": 0,
+            "invalid_citations": 0,
+            "citation_accuracy": null,
+            "citation_details": {
+                "total": 0,
+                "valid_count": 0,
+                "invalid_count": 0,
+                "valid": [],
+                "invalid": [],
+                "accuracy": null
+            },
+            "evidence": [
+                {
+                    "chunk_id": "CERTIN_2023_P8_FIXED_001",
+                    "source_id": "CERTIN_2023",
+                    "source_title": "Cyber Security Awareness Booklet",
+                    "issuer": "CERT-In",
+                    "page": 8,
+                    "text": "Profile\nSocial Media Frauds\nScammers use \"bots\" to trick unsuspecting users into making\nonline payments to accounts under their control, such as\nthrough internet banking or UPI transfers.\nFraudsters use Fake Profile of the victim :\nTo spread false or fake information.\nSends friend requests to other friends of victim to gain\nfinancial benefits.\nTo damage the reputation of the victim.\n1.\n2.\n3.\nAvoid sharing your personal information like address, mobile\nnumber, personal mail id and other sensitive identity related\ninformation on social media.\nDo not share your personal pictures online publicly on social\nmedia accounts.\nNever accept friend requests without appropriate verification and\nconfirmation.\nNever click on suspicious links or download any app recieved\nthrough messages until you verify the authenticity of the source.\nUse different passwords for different social media accounts and\nemails.\nEnable multi-factor authentication for social media accounts.\nDisable profile visibility from",
+                    "rrf_score": 0.03252247488101534,
+                    "cross_encoder_score": 4.6052165031433105
+                },
+                {
+                    "chunk_id": "CERTIN_2023_P11_FIXED_001",
+                    "source_id": "CERTIN_2023",
+                    "source_title": "Cyber Security Awareness Booklet",
+                    "issuer": "CERT-In",
+                    "page": 11,
+                    "text": "Attacks Targeting\nWomen\nMorphing is altering or changing the pictures of the person\nusing morphing tools available online. Young girls and women\nusually fall prey at the hands of the online criminals, who use\ntheir photographs posted online and misuse these images by\nmorphing the pictures.\nThe morphed pictures are then used by perpetrators for\nblackmailing the victims, creating fake online profile, sexting,\nsex chats, pornographic content, nude pictures etc.,\nMorphing can damage the victim's online reputation and cause\nemotional trauma, can also be prone to threats from\nperpetrators and may fall prey to their attempts at blackmailing\nthem.\nEnable your security and privacy features on social media\naccounts\nNever share your personal pictures online publicly on social\nmedia accounts\nUse watermark while sharing pictures\nEnable multi-factor authentication with strong passwords for\nyour social media accounts.\nSave the evidence and the screen shots for referring to",
+                    "rrf_score": 0.031009615384615385,
+                    "cross_encoder_score": -0.512937068939209
+                },
+                {
+                    "chunk_id": "CERTIN_2023_P11_FIXED_002",
+                    "source_id": "CERTIN_2023",
+                    "source_title": "Cyber Security Awareness Booklet",
+                    "issuer": "CERT-In",
+                    "page": 11,
+                    "text": "watermark while sharing pictures\nEnable multi-factor authentication with strong passwords for\nyour social media accounts.\nSave the evidence and the screen shots for referring to the\nincident later.\nDon’t suffer in silence, know that you are not alone, reach out\nand seek help from trusted family and friends.\nIf you observe your fake profile or any such objectionable posts\nin social media, report to the respective social media help\ncentre.\nFake ID Card\nSocial Media Post\nAdult Website\nSafety Tips",
+                    "rrf_score": 0.03252247488101534,
+                    "cross_encoder_score": -1.302189826965332
+                },
+                {
+                    "chunk_id": "CERTIN_2023_P9_FIXED_001",
+                    "source_id": "CERTIN_2023",
+                    "source_title": "Cyber Security Awareness Booklet",
+                    "issuer": "CERT-In",
+                    "page": 9,
+                    "text": "Fraudsters target senior citizens as they are more vulnerable to online\nfinancial scams and frauds.\nSenior citizens must exercise caution when they are online.\nFraudsters trick victims to provide personal sensitive information like\nDate of Birth, credit or debit card numbers, passwords, OTPs, etc to\nsteal their money.\nFraudsters target senior citizens through fake insurance schemes, lowcost medications, card renewal, KYC verification, free gifts and offers.\nFraudsters exploit the loneliness of elderly people and deceive them\nwith fake relationships.\nFraudsters also create fake social media accounts to target senior\ncitizens and convince them to pay money or share banking\ncredentials/OTP/PIN.\n\nAttacks Targeting\nSenior Citizens\nBe aware of fraudsters disguising themselves to be from banks or other\ninstitutions asking for personal sensitive information.\nNever share OTP, username, passwords, credit/debit card details, PIN\nover",
+                    "rrf_score": 0.015625,
+                    "cross_encoder_score": -2.0778560638427734
+                },
+                {
+                    "chunk_id": "CERTIN_2025_P17_FIXED_001",
+                    "source_id": "CERTIN_2025",
+                    "source_title": "Digital Safety Compass Handbook",
+                    "issuer": "CERT-In",
+                    "page": 17,
+                    "text": "Safety Tactics\n17\nFAKE TRADING\nAPPS\nThe fraudulent trading app scam involves\ncreating deceptive apps to trick investors,\npromising high returns with low risk to lure you\ninto investing.\nScammers try\nto contact\nvictims\nthrough social\nmedia and\nestablish trust.\nAfter gaining\ntrust, scammers\noffer a fake\ntrading app as a\nprofitable\ninvestment.\nThe app falsely\nshows rising\ninvestments,\nmisleading\nvictims into\ninvesting more.\nScammers\nimpose hidden\nfees when\nvictims withdraw\nfunds, hindering\ntheir recovery\nefforts.\nEnsure your broker is SEBIregistered. Verify on SEBI’s\nofficial website.\nUse the official app or\nwebsite of a registered\nbroker for fund transfers.\nSome influencers may\npromote fake investments.\nResearch before trusting\ntheir advice.\nAvoid transferring money to\npersonal accounts; always\nuse the official app or\nwebsite of a registered\nbroker.\nCERT-In’s Digital Safety\nCompass Handbook",
+                    "rrf_score": 0.014925373134328358,
+                    "cross_encoder_score": -5.230728626251221
+                }
+            ],
+            "answer": "Generation failed. Check the API error above.",
+            "retrieval_time_seconds": 1.26,
+            "generation_latency_seconds": 97.8,
+            "total_time_seconds": 99.06,
+            "status": "ERROR",
+            "passed": false,
+            "manual_review_required": true
+        }
+    ]
+}

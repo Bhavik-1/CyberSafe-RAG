@@ -1,0 +1,100 @@
+[
+  {
+    "test_id": "E2E-01",
+    "category": "Phishing",
+    "question": "What should I do if I receive a suspicious phishing email?",
+    "expected_topics": [
+      "urgency",
+      "suspicious sender",
+      "suspicious links",
+      "attachments",
+      "reporting"
+    ],
+    "expected_source_ids": ["CERTIN_2023", "CERTIN_2024"],
+    "answerable": true
+  },
+  {
+    "test_id": "E2E-02",
+    "category": "MFA",
+    "question": "How does multi-factor authentication protect my online accounts?",
+    "expected_topics": [
+      "additional security layer",
+      "authentication factors",
+      "account security"
+    ],
+    "expected_source_ids": ["OWASP_MFA", "OWASP_AUTH"],
+    "answerable": true
+  },
+  {
+    "test_id": "E2E-03",
+    "category": "Password Security",
+    "question": "How should passwords be securely stored?",
+    "expected_topics": [
+      "password hashing",
+      "salting",
+      "secure password storage"
+    ],
+    "expected_source_ids": ["OWASP_PASSWORD"],
+    "answerable": true
+  },
+  {
+    "test_id": "E2E-04",
+    "category": "Incident Response",
+    "question": "What activities are involved in responding to a cybersecurity incident?",
+    "expected_topics": [
+      "incident triage",
+      "prioritization",
+      "incident tracking",
+      "communication",
+      "recovery decisions"
+    ],
+    "expected_source_ids": ["NIST_800_61R3"],
+    "answerable": true
+  },
+  {
+    "test_id": "E2E-05",
+    "category": "Malware",
+    "question": "What are common warning signs of malware infection?",
+    "expected_topics": [
+      "slow device performance",
+      "unexpected pop-ups",
+      "unauthorized messages",
+      "browser redirects"
+    ],
+    "expected_source_ids": ["CERTIN_2023"],
+    "answerable": true
+  },
+  {
+    "test_id": "E2E-06",
+    "category": "Out of Scope",
+    "question": "What is the current balance in my bank account?",
+    "expected_topics": [],
+    "expected_source_ids": [],
+    "answerable": false
+  },
+  {
+    "test_id": "E2E-07",
+    "category": "Insufficient Evidence",
+    "question": "Which exact person sent me an anonymous phishing email?",
+    "expected_topics": [],
+    "expected_source_ids": [],
+    "answerable": false
+  },
+  {
+    "test_id": "E2E-08",
+    "category": "Account Security",
+    "question": "What should I do if I suspect that my online account has been compromised?",
+    "expected_topics": [
+      "account compromise",
+      "account recovery",
+      "authentication security"
+    ],
+    "expected_source_ids": [
+      "CERTIN_2023",
+      "CERTIN_2024",
+      "OWASP_AUTH",
+      "OWASP_MFA"
+    ],
+    "answerable": true
+  }
+]

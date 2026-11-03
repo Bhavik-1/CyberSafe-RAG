@@ -1,0 +1,490 @@
+[
+    {
+        "test_id": "E2E-01",
+        "category": "Phishing",
+        "question": "What should I do if I receive a suspicious phishing email?",
+        "answerable": true,
+        "answer": "Answer:\nIf you receive a suspicious phishing email, take the following precautions:\n* Do not react to messages that show urgency [Evidence 1, p. 4] [Evidence 4, p. 4].\n* Do not trust promotional offers that look \"too good to be true\" [Evidence 1, p. 4].\n* Do not click any links or attachments from suspicious emails received from strangers [Evidence 2, p. 7] [Evidence 3, p. 4].\n* Never share sensitive details like passwords or PINs via email or text [Evidence 3, p. 4].\n* Carefully check the URL or domain name in the email address of the sender before clicking [Evidence 1, p. 4] [Evidence 2, p. 7] [Evidence 4, p. 4].\n* Verify email IDs in emails addressed to generic recipients [Evidence 1, p. 4].\n* Watch for typing errors, misspelled words, poor grammar, and unprofessional language [Evidence 1, p. 4] [Evidence 2, p. 7] [Evidence 3, p. 4].\n* If you must handle shortened URLs, expand and verify them instead of clicking them directly [Evidence 2, p. 7] [Evidence 3, p. 4].\n* Report to law enforcement agencies if you become a victim of phishing [Evidence 1, p. 4].\n\nSources:\n- Cyber Security Awareness Booklet | CERT-In | Page 4\n- Cyber Security Handbook | CERT-In | Page 7\n- Digital Safety Compass Handbook | CERT-In | Page 4",
+        "evidence": [
+            {
+                "number": 1,
+                "title": "Cyber Security Awareness Booklet",
+                "issuer": "CERT-In",
+                "page": "4",
+                "score": 4.2529296875,
+                "text": "information or\nfinancial data.\nCarefully check the URL before clicking on it.\nNever react to the messages which shows urgency.\nDo not trust promotional offers which look “too good to be\ntrue”.\nDo not hesitate to report to Law Enforcement Agencies, if you\nbecome a victim of phishing.\nVerify the email ids in emails addressed to generic recipients.\nLook for typing errors (eg., Acc0unt, ema1l, dep0sit, passw0rd)\n“Do yu kare about yurself?” Look for poor grammar and\nunprofessional Language.\nSafety Tips"
+            },
+            {
+                "number": 2,
+                "title": "Cyber Security Handbook",
+                "issuer": "CERT-In",
+                "page": "7",
+                "score": 3.528021812438965,
+                "text": "E-Mail Security\nE-Mail Security\nVerify the sender before clicking on any link/ attachment.\nCheck the domain name in the email address of the sender. Look for\nmisspelled or typo errors.\nDon’t click any link/attachment from suspicious emails received from\nstrangers.\nDo not use official email accounts for online shopping or ticket\nbooking.\nDo not click on shortened URLs received in emails/ chats/ messages\nwithout verifying them by expanding the URL.\nUse strong passwords.\nEnable Multi-Factor Authentication (MFA).\nDo not store Username and passwords in public systems.\nBest Practices\nBest Practices\nPAGE 4"
+            },
+            {
+                "number": 3,
+                "title": "Digital Safety Compass Handbook",
+                "issuer": "CERT-In",
+                "page": "4",
+                "score": 2.526242733001709,
+                "text": "Safety Practices\nPHISHING\nWEBSITE SCAMS\nScammers create fake websites and steal personal information such\nas banking details, card details, personal information.\nBe cautious while clicking on links &\nattachments in emails received from\nstrangers.\nNever\nshare\nsensitive\ndetails\nlike\npasswords or PINs via email or text.\nWatch for poor grammar or spelling\nmistakes, which can be signs of phishing.\nUse unique, complex passwords for each\naccount.\nExpand and verify shortened URLs before\nclicking on them.\nDon't bite\nthe\nphishing\nbait\nHow Attacks Work\nScammer sends\nfake email.\nEmail arrives in\ninbox with a link .\nVictim click on\nthe link.\nFake website asks\nsensitive information.\nVictim's enters\nthe information.\nUnauthorized access\nand data misuse.\n04\nCERT-In’s Digital Safety\nCompass Handbook"
+            },
+            {
+                "number": 4,
+                "title": "Cyber Security Awareness Booklet",
+                "issuer": "CERT-In",
+                "page": "4",
+                "score": -0.8859750628471375,
+                "text": "Phishing\nYour bank account will get deactivated today due to inactivity on\nyour account. Click on the link to\n\"https:www/khasenterprise.in/reactivate/yourbank/loginform.htm\"\nstart the verification process to activate your account.\nURL require login\nYour Bank <khas@hello.org.in>\nTue, 07/02/2023\nDear Bank Customer,\nYour Bank\nYour account will restore after completing the process.\nThanks you for being a valuable customer.\nNot Your bank\nLink not going to your bank\nPhishing is a common method that cybercriminals use to do\nthe fraudulent activity by creating authentic-looking emails or\nwebsites to trick victims into sharing personal information or\nfinancial data.\nCarefully check the URL before clicking on it.\nNever react to the messages which shows urgency.\nDo not trust promotional offers which"
+            },
+            {
+                "number": 5,
+                "title": "Multifactor Authentication Cheat Sheet",
+                "issuer": "OWASP",
+                "page": "11",
+                "score": -1.7939693927764893,
+                "text": "I.\nPros¶\n● Relatively simple to implement.\n● Requires user to link their account to a mobile number.\nCons¶\n● Requires the user to have a mobile device or landline.\n● Require user to have signal or internet access to receive the call or message.\n● Calls and SMS messages may cost money to send need to protect against attackers\nrequesting a large number of messages to exhaust funds.\n● Susceptible to SIM swapping attacks.\n● SMS messages may be received on the same device the user is authenticating from.\n● Susceptible to phishing.\n● SMS may be previewed when the device is locked.\n● SMS may be read by malicious or insecure applications.\nEmail¶\nEmail verification requires that the user enters a code or clicks a link sent to their email address.\nThere is some debate as to whether email constitutes a form of MFA, because if the user does\nnot have MFA configured on"
+            }
+        ],
+        "citation_validation": {
+            "valid": true,
+            "citation_count": 16,
+            "valid_citation_count": 16,
+            "errors": []
+        },
+        "latency_seconds": 27.87,
+        "api_latency": 6.03,
+        "cache_hit": false,
+        "status": "success",
+        "error": null
+    },
+    {
+        "test_id": "E2E-02",
+        "category": "MFA",
+        "question": "How does multi-factor authentication protect my online accounts?",
+        "answerable": true,
+        "answer": "Answer:\nMulti-factor authentication (MFA) protects your online accounts by adding an extra layer of security [Evidence 1, p. 10]. It requires evidence from at least two distinct authentication factors across different categories:\n* Something you know (such as passwords and PINs) [Evidence 4, p. 1]\n* Something you have (such as OTP tokens, U2F tokens, certificates, smart cards, SMS, and phone calls) [Evidence 4, p. 1]\n* Something you are (such as fingerprints, facial recognition, iris scans, and behavioral biometrics) [Evidence 4, p. 1]\n\nSources:\n- Cyber Security Handbook | CERT-In | Page 10\n- Multifactor Authentication Cheat Sheet | OWASP | Page 1",
+        "evidence": [
+            {
+                "number": 1,
+                "title": "Cyber Security Handbook",
+                "issuer": "CERT-In",
+                "page": "10",
+                "score": 5.995265960693359,
+                "text": "Data Security\nData Security\nEncrypt sensitive data to protect it from unauthorized access.\nEnable Multi Factor Authentication (MFA) to add an extra layer of\nsecurity to your accounts.\nBe cautious when working with sensitive information in public places\nor on shared devices.\nAvoid using easily guessed or common passwords.\nUse different passwords for different accounts.\nAvoid using public Wi-Fi to do secured transactions.\nUse strong passwords to lock your devices.\nBest Practices\nBest Practices\nPAGE 7"
+            },
+            {
+                "number": 2,
+                "title": "Cyber Security Awareness Booklet",
+                "issuer": "CERT-In",
+                "page": "9",
+                "score": 3.714669704437256,
+                "text": "banks or other\ninstitutions asking for personal sensitive information.\nNever share OTP, username, passwords, credit/debit card details, PIN\nover phone or internet.\nNever click or download any link/attachments from unknown sources.\nAvoid shopping online if you are not familiar with it.\nAlways have a lock, PIN, password, or fingerprint to access your\nmobile/laptop/computer.\nEnable multi-factor authentication to your emails, banking and social\nmedia accounts.\nNever share sensitive personal information with strangers and in social\nmedia.\nAvoid making charity contributions over phone.\nAlways remember that banks or other financial institutions never ask for\nyour username/passwrord, OTP, PIN, credit/debit card details.\nSenior Citizens must exercise\ncaution when they are online.\nFraudsters\ntarget\nSenior\ncitizens as they are more\nvulnerable to online financial\nscams and frauds.\n\nFinancial frauds targeting Senior Citizens\nSafety"
+            },
+            {
+                "number": 3,
+                "title": "Cyber Security Handbook",
+                "issuer": "CERT-In",
+                "page": "7",
+                "score": 2.7416648864746094,
+                "text": "E-Mail Security\nE-Mail Security\nVerify the sender before clicking on any link/ attachment.\nCheck the domain name in the email address of the sender. Look for\nmisspelled or typo errors.\nDon’t click any link/attachment from suspicious emails received from\nstrangers.\nDo not use official email accounts for online shopping or ticket\nbooking.\nDo not click on shortened URLs received in emails/ chats/ messages\nwithout verifying them by expanding the URL.\nUse strong passwords.\nEnable Multi-Factor Authentication (MFA).\nDo not store Username and passwords in public systems.\nBest Practices\nBest Practices\nPAGE 4"
+            },
+            {
+                "number": 4,
+                "title": "Multifactor Authentication Cheat Sheet",
+                "issuer": "OWASP",
+                "page": "1",
+                "score": 2.189821481704712,
+                "text": "Multifactor Authentication Cheat Sheet¶\nIntroduction¶\nMultifactor Authentication (MFA) requires evidence from at least two distinct authentication\nfactors: something you know, something you have, and something you are. Location and other\nrisk signals can inform authentication decisions, but do not substitute for an authentication\nfactor, as explained in NIST SP 800-63B-4.\nFactor\nExamples\nSomething You\nKnow\nPasswords and PINs\nSomething You\nHave\nOTP Tokens, U2F Tokens, Certificates, Smart Cards, SMS and Phone\nCalls (restricted)\nSomething You Are\nFingerprints, Facial Recognition, Iris Scans, Behavioral Biometrics\nIt should be noted that requiring multiple instances of the same authentication factor (such as\nneeding both a password and a PIN) does not constitute MFA and offers minimal additional\nsecurity. The factors used should be independent of each other and should not be able to be\ncompromised by the same attack. While the following sections"
+            },
+            {
+                "number": 5,
+                "title": "Cyber Security Awareness Booklet",
+                "issuer": "CERT-In",
+                "page": "8",
+                "score": 1.805248737335205,
+                "text": "Profile\nSocial Media Frauds\nScammers use \"bots\" to trick unsuspecting users into making\nonline payments to accounts under their control, such as\nthrough internet banking or UPI transfers.\nFraudsters use Fake Profile of the victim :\nTo spread false or fake information.\nSends friend requests to other friends of victim to gain\nfinancial benefits.\nTo damage the reputation of the victim.\n1.\n2.\n3.\nAvoid sharing your personal information like address, mobile\nnumber, personal mail id and other sensitive identity related\ninformation on social media.\nDo not share your personal pictures online publicly on social\nmedia accounts.\nNever accept friend requests without appropriate verification and\nconfirmation.\nNever click on suspicious links or download any app recieved\nthrough messages until you verify the authenticity of the source.\nUse different passwords for different social media accounts and\nemails.\nEnable multi-factor authentication for social media accounts.\nDisable profile visibility from"
+            }
+        ],
+        "citation_validation": {
+            "valid": true,
+            "citation_count": 4,
+            "valid_citation_count": 4,
+            "errors": []
+        },
+        "latency_seconds": 11.17,
+        "api_latency": 5.28,
+        "cache_hit": false,
+        "status": "success",
+        "error": null
+    },
+    {
+        "test_id": "E2E-03",
+        "category": "Password Security",
+        "question": "How should passwords be securely stored?",
+        "answerable": true,
+        "answer": "Answer:\nPasswords must never be stored in plain text or encrypted; instead, they must be securely protected using modern, adaptive, slow, and memory-hard hashing algorithms [Evidence 1, p. 1] [Evidence 2, p. 1]. \n\nTo store passwords securely, follow these practices:\n* Use strong, slow hashing algorithms such as Argon2id, bcrypt, or PBKDF2 [Evidence 1, p. 1] [Evidence 2, p. 1].\n* Avoid fast hashing algorithms like SHA-256 for password storage [Evidence 1, p. 1].\n* Use PBKDF2 with a work factor of 600,000 or more, configured with an internal hash function of HMAC-SHA-256 [Evidence 2, p. 1].\n* Add a unique salt to each password to prevent the use of precomputed lookup tables such as rainbow tables [Evidence 1, p. 1].\n* Consider using a pepper for additional defense in depth [Evidence 2, p. 1]. A pepper must be shared between stored passwords (rather than being unique), must not be public, and must not be stored along with the generated hash [Evidence 4, p. 3].\n* Store peppers separately from the password database in a secrets vault or a Hardware Security Module (HSM) [Evidence 4, p. 3].\n\nSources:\n- Password Storage Cheat Sheet | OWASP | Page 1\n- Password Storage Cheat Sheet | OWASP | Page 2\n- Password Storage Cheat Sheet | OWASP | Page 3",
+        "evidence": [
+            {
+                "number": 1,
+                "title": "Password Storage Cheat Sheet",
+                "issuer": "OWASP",
+                "page": "1",
+                "score": 7.335654258728027,
+                "text": "Password Storage Cheat Sheet¶\nIntroduction¶\nThis cheat sheet advises you on the proper methods for storing passwords for authentication.\nWhen passwords are stored, they must be protected from an attacker even if the application or\ndatabase is compromised. Fortunately, a majority of modern languages and frameworks provide\nbuilt-in functionality to help store passwords safely.\nPasswords should never be stored in plain text. Instead, they must be protected using strong,\nslow hashing algorithms such as Argon2id, bcrypt, or PBKDF2. A unique salt must be added to\neach password to prevent attackers from using precomputed lookup tables like rainbow tables.\nFast hashing algorithms such as SHA‐256 are not suitable for password storage because they\nallow attackers to perform large numbers of guesses quickly. Using slow, memory‐hard\nalgorithms makes brute‐force attacks significantly more difficult, expensive, and\ntime"
+            },
+            {
+                "number": 2,
+                "title": "Password Storage Cheat Sheet",
+                "issuer": "OWASP",
+                "page": "1",
+                "score": 6.232588291168213,
+                "text": "use PBKDF2 with a work factor of 600,000 or more and set\nwith an internal hash function of HMAC-SHA-256.\nConsider using a pepper to provide additional defense in depth (though alone, it provides no\nadditional secure characteristics).\nBackground¶\nHashing vs Encryption¶\nHashing and encryption can keep sensitive data safe, but in almost all circumstances,\nPasswords should be securely hashed using modern, adaptive hashing algorithms (e.g.,\nArgon2id, bcrypt, or PBKDF2), rather than encrypted or stored in plaintext."
+            },
+            {
+                "number": 3,
+                "title": "Authentication Cheat Sheet",
+                "issuer": "OWASP",
+                "page": "4",
+                "score": 5.549211502075195,
+                "text": "E. Block Common and Previously Breached Passwords\n● Use Pwned Passwords to check passwords against previously breached passwords.\n● The Pwned Passwords database can also be downloaded and hosted locally.\n● Other password lists are available through resources such as SecLists, although their\nupdate frequency is not guaranteed.\nFor More Detailed Information\n● ASVS v5.0 Password Security Requirements\n● Passwords Evolved: Authentication Guidance for the Modern Era\n2.5 Implement a Secure Password Recovery Mechanism\nApplications commonly provide a mechanism that allows users to regain access to their\naccounts if they forget their passwords.\nA secure password recovery mechanism should be implemented.\n2.6 Store Passwords Securely\nIt is critical to store passwords using the correct cryptographic technique.\nRefer to the OWASP Password Storage Cheat Sheet for detailed guidance.\n2.7 Compare Password Hashes Using Safe Functions\nWhere possible, compare the user-supplied"
+            },
+            {
+                "number": 4,
+                "title": "Password Storage Cheat Sheet",
+                "issuer": "OWASP",
+                "page": "3",
+                "score": 4.871642589569092,
+                "text": "database.\nCommon requirements for peppering strategies¶\nA pepper is shared between stored passwords, rather than being unique to an individual\npassword like a password salt.\nUnlike a password salt, the pepper should not be public and should not be stored along with the\ngenerated hash. The pepper should be stored separately from the password database.\nPeppers are secrets and should be stored in \"secrets vaults\" or HSMs (Hardware Security\nModules). See the Secrets Management Cheat Sheet for more information on securely storing\nsecrets.\nIn the event of a pepper's compromise, the pepper will have to be changed. Peppers cannot be\nchanged without knowledge of a user's password. Therefore changing a pepper will require\nforcing all users whose passwords were protected by the previous pepper to reset their\npasswords."
+            },
+            {
+                "number": 5,
+                "title": "Password Storage Cheat Sheet",
+                "issuer": "OWASP",
+                "page": "2",
+                "score": 4.624253273010254,
+                "text": "necessary to\nobtain the original plaintext password. This might be necessary if the application needs to use\nthe password to authenticate with another system that does not support a modern way to\nprogrammatically grant access, such as OpenID Connect (OIDC). Wherever possible, an\nalternative architecture should be used to avoid the need to store passwords in an encrypted\nform.\nFor further guidance on encryption, see the Cryptographic Storage Cheat Sheet.\nWhen Password Hashes Can Be Cracked¶\nStrong passwords stored with modern hashing algorithms and using hashing best practices\nshould be effectively impossible for an attacker to crack. It is your responsibility as an\napplication owner to select a modern hashing algorithm.\nHowever, there are some situations where an attacker can \"crack\" the hashes in some\ncircumstances by doing the following:\nSelecting a password you think the victim has chosen (e.g.password1"
+            }
+        ],
+        "citation_validation": {
+            "valid": false,
+            "citation_count": 10,
+            "valid_citation_count": 10,
+            "errors": [
+                "Uncited or unknown source listed: password storage cheat sheet | owasp | Page 2"
+            ]
+        },
+        "latency_seconds": 11.59,
+        "api_latency": 4.51,
+        "cache_hit": false,
+        "status": "success",
+        "error": null
+    },
+    {
+        "test_id": "E2E-04",
+        "category": "Incident Response",
+        "question": "What activities are involved in responding to a cybersecurity incident?",
+        "answerable": true,
+        "answer": "Answer:\nResponding to a cybersecurity incident involves the following activities:\n- Executing systematic responses and recovery through information analysis and appropriate actions [Evidence 2, p. 10].\n- Performing root cause analysis and applying lessons learned to improve cybersecurity risk management [Evidence 2, p. 10].\n- Formally notifying affected customers, employees, partners, regulators, or other stakeholders about a data breach or incident [Evidence 4, p. 38].\n- Conducting public communication regarding the status of a particular incident, such as answering media inquiries [Evidence 4, p. 38].\n- Sharing cybersecurity threat information voluntarily based on activity observed within the organization's technology assets [Evidence 4, p. 38].\n- Coordinating with appropriate individuals inside and outside the organization once an incident is analyzed and prioritized [Evidence 4, p. 38].\n- Following established coordination procedures that outline what must be reported, to whom, and at what times [Evidence 4, p. 38].\n- Involving various internal and external parties who hold diverse roles and responsibilities [Evidence 1, p. 14].\n\nSources:\n- Incident Response Recommendations | NIST | Page 6\n- Incident Response Recommendations | NIST | Page 10\n- Incident Response Recommendations | NIST | Page 14\n- Incident Response Recommendations | NIST | Page 17\n- Incident Response Recommendations | NIST | Page 38",
+        "evidence": [
+            {
+                "number": 1,
+                "title": "Incident Response Recommendations",
+                "issuer": "NIST",
+                "page": "14",
+                "score": 7.301924228668213,
+                "text": "throughout their\ncybersecurity risk management activities.\n2.2. Incident Response Roles and Responsibilities\nIn the past, incident response activities were performed almost exclusively by incident handlers\nfrom the organization’s own incident response team. Today, while incident handlers are still\ncritically important, most organizations increasingly recognize that the success of their incident\nresponse efforts depend on the participation of many internal and external parties who hold a\nwide variety of roles and responsibilities and may be spread around the world. Roles and\nresponsibilities will differ for each organization and may also differ within an organization based\non the nature of a particular incident."
+            },
+            {
+                "number": 2,
+                "title": "Incident Response Recommendations",
+                "issuer": "NIST",
+                "page": "10",
+                "score": 6.965227127075195,
+                "text": "systematic\nresponses to and recovery from incidents by analyzing information and taking appropriate\naction. This reduces cybersecurity and enterprise risks by minimizing data loss or theft, the\ndisruption of services, and the overall impact of incidents. Lessons learned from incident\nresponse activities and root cause analysis help improve cybersecurity risk management and"
+            },
+            {
+                "number": 3,
+                "title": "Incident Response Recommendations",
+                "issuer": "NIST",
+                "page": "6",
+                "score": 5.3647990226745605,
+                "text": "NIST SP 800-61r3\n\nIncident Response Recommendations and\nApril 2025\n\nConsiderations for Cyber Risk Management\n\nii\nSupplemental Content\nNIST has established an Incident Response project page that hosts links to resources with\nadditional information on incident response activities. By moving links from this document to a\nwebsite, NIST can update and expand them as needed without having to release a new version\nof this publication.\nFor more information on CSF 2.0 Community Profiles, see the Framework Resource Center.\nAudience\nThe target audience for this publication includes cybersecurity program leadership,\ncybersecurity personnel, and others who are responsible for preparing for, detecting,\nresponding to, or recovering from cybersecurity incidents. This publication is intended for use\nby most organizations, regardless of sector, size, or other factors.\nTrademark Information\nAll registered trademarks belong to their respective organizations."
+            },
+            {
+                "number": 4,
+                "title": "Incident Response Recommendations",
+                "issuer": "NIST",
+                "page": "38",
+                "score": 4.629176139831543,
+                "text": "notification involves formally informing\naffected customers, employees, partners,\nregulators, or others about a data breach\nor other incident. Public communication\ninvolves communicating to the public about\nthe status of a particular incident, such as\nresponding to media inquiries. Incident\ninformation sharing involves sharing\ncybersecurity threat information with\nothers, usually voluntarily, based on\nactivity observed within the organization’s\ntechnology assets.\nR1: Organizations should have mechanisms\nin place in advance to coordinate with\naffected parties about incidents when\nneeded.\nRS.CO-02\nInternal and external\nstakeholders are notified of\nincidents\nHigh\nR1: When an incident is analyzed and\nprioritized, the incident response team\nshould coordinate with the appropriate\nindividuals inside and outside of the\norganization so that all who need to be\ninvolved will play their roles.\nR2: Follow established procedures\nconcerning incident coordination that\ninclude what must be reported to whom\nand at what times (e.g., initial notification"
+            },
+            {
+                "number": 5,
+                "title": "Incident Response Recommendations",
+                "issuer": "NIST",
+                "page": "17",
+                "score": 4.406686305999756,
+                "text": "NIST SP 800-61r3\n\nIncident Response Recommendations and\nApril 2025\n\nConsiderations for Cyber Risk Management\n\n9\n• Definition of events, cybersecurity incidents, investigations, and related terms\n• Roles, responsibilities, and authorities, such as which roles have the authority to\nconfiscate, disconnect, or shut down technology assets\n• Guidelines for prioritizing incidents, estimating their severity, initiating recovery\nprocesses, maintaining or restoring operations, and other key actions\n• Performance measures\nProcesses and procedures should be based on the incident response policy and plan.\nDocumented procedures should explain how technical processes and other operating\nprocedures should be performed. Procedures can be tested or exercised periodically to verify\ntheir accuracy and can be used to help train new personnel. While it is impossible to have\ndetailed procedures for every possible situation, organizations should consider documenting\nprocedures for responding to the most common types of incidents and threats. Organizations\nshould also develop"
+            }
+        ],
+        "citation_validation": {
+            "valid": false,
+            "citation_count": 8,
+            "valid_citation_count": 8,
+            "errors": [
+                "Uncited or unknown source listed: incident response recommendations | nist | Page 17",
+                "Uncited or unknown source listed: incident response recommendations | nist | Page 6"
+            ]
+        },
+        "latency_seconds": 12.56,
+        "api_latency": 6.26,
+        "cache_hit": false,
+        "status": "success",
+        "error": null
+    },
+    {
+        "test_id": "E2E-05",
+        "category": "Malware",
+        "question": "What are common warning signs of malware infection?",
+        "answerable": true,
+        "answer": "Answer:\nCommon warning signs of malware infection include:\n- A sudden drop in device performance [Evidence 1, p. 7].\n- Frequent ads and pop-up windows [Evidence 1, p. 7].\n- Programs on the device opening, closing, and modifying themselves [Evidence 1, p. 7].\n- Having little to no storage space on the device [Evidence 1, p. 7].\n- Emails or messages being sent from the device's email or social-media accounts without permission [Evidence 1, p. 7].\n- Anti-malware programs being disabled automatically [Evidence 1, p. 7].\n- Web browsers continually redirecting to unknown, suspicious web pages [Evidence 1, p. 7].\n- Pop-up ad messages featuring security warnings that urge the download and installation of a security product [Evidence 1, p. 7].\n\nSources:\n- Cyber Security Awareness Booklet | CERT-In | Page 7",
+        "evidence": [
+            {
+                "number": 1,
+                "title": "Cyber Security Awareness Booklet",
+                "issuer": "CERT-In",
+                "page": "7",
+                "score": 2.6499037742614746,
+                "text": "Malware\nMalware is a piece of malicious code inserted in an application,\nprogram or system by threat actors. They can infect your\nsystems and perform malicious operations.\nSudden drop in\ndevice\nperformance\nFrequent ads\nand pop-up\nwindows\nYour device\nprograms are\nopening, closing,\nand modifying their\nown.\nYour device\nhas little\nto no storage\nspace\nEmails/ messages from\nyour email/social-media\naccounts in your device\nare sent without your\npermission\nAnti-malware\nprograms are\ndisabled\nautomatically\nWeb browser keep\nredirecting to\nunknown\nsupicious web\npage\nPop-up ad messages\nwith security\nwarnings and urge\nyou to download and\ninstall the security\nproduct\n\"Key signs that indicates Malware\"\nAvoid clicking on suspicious emails, links, and sites from\nunknown source.\nAs soon as you click on any malicious link, your mobile can be\nhacked or your data can be stolen.\nBrowse only secure and authorised websites.\nAlways keep your computer"
+            },
+            {
+                "number": 2,
+                "title": "Cyber Security Handbook",
+                "issuer": "CERT-In",
+                "page": "12",
+                "score": 0.15509814023971558,
+                "text": "PAGE 9\n2\n3\n4\n5\n1\nAn essential step in preventing and\nidentifying malware infection is installing\nantivirus software from a trustworthy\nvendor\nRealtime protection by system scanning\nand blocks malicious pop-ups and ads\nAlerts malicious files present in internal\nand external devices\nAlerts when visiting infected or malicious\nwebsites\nKeeping them updated helps to improve\nprotection against latest threats\nBenefits of using\nanti-virus Software\nBenefits of using\nanti-virus Software"
+            },
+            {
+                "number": 3,
+                "title": "Incident Response Recommendations",
+                "issuer": "NIST",
+                "page": "32",
+                "score": -1.3264260292053223,
+                "text": "09\nComputing hardware and\nsoftware, runtime environments,\nand their data are monitored to\nfind potentially adverse events\nHigh\nR1: Monitor email, web, file sharing,\ncollaboration services, and other common\nattack vectors to detect malware, phishing,\ndata leaks, exfiltration, and other adverse\nevents.\nR2: Monitor authentication attempts to\nidentify attacks against credentials and\nunauthorized credential use.\nR3: Monitor software and hardware\nconfigurations for deviations from security\nbaselines.\nR4: Monitor hardware and software,\nincluding cybersecurity protection\nmechanisms, for signs of tampering, failure,\nor compromise.\nR5: Monitor endpoints for cyber health\nissues (e.g., missing patches, malware\ninfections, or unauthorized software), and\nredirect endpoints with issues to a\nremediation environment before access is\nauthorized."
+            },
+            {
+                "number": 4,
+                "title": "Digital Safety Compass Handbook",
+                "issuer": "CERT-In",
+                "page": "13",
+                "score": -5.858037948608398,
+                "text": "Beware of calls, emails, or pop-ups claiming your computer has\nissues. Scammers often pose as trusted companies to create fear.\nUseful Techniques\nFAKE\nTECHNICAL\nASSISTANCE\nHang up if someone claims\nyour computer has a\nproblem; scammers often\nuse fake caller IDs.\nAvoid calling numbers or\nclicking links in pop-ups\nwarning of system issues.\nContact your security\nsoftware provider directly\nusing official contact\ndetails.\nSeek help only from\nverified cybersecurity\nprofessionals.\nNever share passwords or\ngrant remote access to\nunverified contacts.\nDirect to fake\nwebsites for\nsensitive info.\nRequest remote\naccess.\nEnrolls in Fake\nPrograms.\nInstall malware for\npassword access.\nDemand credit\ncard info for scams.\nTry to sell worthless\nservice/software.\n13\nScammer’s Tactics\nCERT-In’s Digital Safety\nCompass Handbook"
+            },
+            {
+                "number": 5,
+                "title": "Incident Response Recommendations",
+                "issuer": "NIST",
+                "page": "10",
+                "score": -7.650388717651367,
+                "text": "has occurred.\nA cybersecurity incident (or simply incident) is\n...an occurrence that actually or imminently jeopardizes, without lawful\nauthority, the integrity, confidentiality, or availability of information or\nan information system; or constitutes a violation or imminent threat of\nviolation of law, security policies, security procedures, or acceptable use\npolicies. [FISMA2014]\nExamples of incidents include an attacker:\n• Employing a botnet to send high volumes of connection requests to an internet-facing\nservice, making it unavailable to legitimate service users\n• Obtaining administrative credentials at a software-as-a-service provider, which puts\nsensitive tenant data entrusted to that provider at risk\n• Intruding upon an organization’s business network to steal credentials and use them to\ninstruct industrial control systems to shut down or destroy critical physical components,\ncausing a major service disruption\n• Deploying ransomware to"
+            }
+        ],
+        "citation_validation": {
+            "valid": true,
+            "citation_count": 8,
+            "valid_citation_count": 8,
+            "errors": []
+        },
+        "latency_seconds": 12.47,
+        "api_latency": 5.19,
+        "cache_hit": false,
+        "status": "success",
+        "error": null
+    },
+    {
+        "test_id": "E2E-06",
+        "category": "Out of Scope",
+        "question": "What is the current balance in my bank account?",
+        "answerable": false,
+        "answer": "Answer:\nThe available evidence is insufficient to answer what the current balance is in your bank account. While a banking application may allow users to view their account balance within an authenticated session [Evidence 1, p. 21], the provided evidence does not contain personal financial or account balance information.\n\nSources:\n- Authentication Cheat Sheet | OWASP | Page 21",
+        "evidence": [
+            {
+                "number": 1,
+                "title": "Authentication Cheat Sheet",
+                "issuer": "OWASP",
+                "page": "21",
+                "score": -7.7903265953063965,
+                "text": "● A banking application may allow users to view their account balance within an\nauthenticated session.\n● It may require stronger or more recent authentication for transaction details or money\nmovement.\nQuestions to Consider When Implementing Risk-Based Authentication\n1. Are the policies aligned with corporate policies and regulatory requirements?\n2. Which user or device attributes will be monitored at session start?\n○ IP address.\n○ Geolocation.\n○ Device fingerprint.\n○ Time of day.\n○ Behavioral biometrics.\n3. Which signals need to be refreshed during an active session, and how frequently?\n4. How will the application ensure signal accuracy and handle missing or low-confidence\ndata?\n5. What scoring model will convert raw signals into a risk tier?\n○ Weights.\n○ Thresholds.\n○ Machine Learning.\n○ Rule-based models.\n○ Hybrid models.\n6. Where will the risk model run?\n○ Edge.\n○"
+            },
+            {
+                "number": 2,
+                "title": "Cyber Security Awareness Booklet",
+                "issuer": "CERT-In",
+                "page": "4",
+                "score": -10.146799087524414,
+                "text": "Phishing\nYour bank account will get deactivated today due to inactivity on\nyour account. Click on the link to\n\"https:www/khasenterprise.in/reactivate/yourbank/loginform.htm\"\nstart the verification process to activate your account.\nURL require login\nYour Bank <khas@hello.org.in>\nTue, 07/02/2023\nDear Bank Customer,\nYour Bank\nYour account will restore after completing the process.\nThanks you for being a valuable customer.\nNot Your bank\nLink not going to your bank\nPhishing is a common method that cybercriminals use to do\nthe fraudulent activity by creating authentic-looking emails or\nwebsites to trick victims into sharing personal information or\nfinancial data.\nCarefully check the URL before clicking on it.\nNever react to the messages which shows urgency.\nDo not trust promotional offers which"
+            },
+            {
+                "number": 3,
+                "title": "Cyber Security Awareness Booklet",
+                "issuer": "CERT-In",
+                "page": "5",
+                "score": -11.021998405456543,
+                "text": "Vishing\nFraudsters contact the victim\npretending to be calling from\ntrusted sources like bank/\nincome tax/ Gas agency etc.\nThey ask victim's for bank\naccount details & collect\nfinancial information about\ndebit/credit cards, expiry date\netc.\nThe fraudster tells the victim to\nshare OTP sent on mobile for\ndepositing the amount.\nOnce the victim shares the OTP,\nmoney is deducted from their\naccount.\nNever share OTP, PIN, CVV, Debit/Credit card details with\nanyone.\nDo not share any OTP/UPI PIN for receiving money.\nDo not respond to any calls asking to confirm or share bank\naccount, credit/debit card details or sensitive information.\nDo not provide personal information in order to recieve prize/\nlottery/ gifts/ updating KYC etc.,\nDo not call the numbers of service providers randomly found in\nsearch engines as"
+            },
+            {
+                "number": 4,
+                "title": "Session Management Cheat Sheet",
+                "issuer": "OWASP",
+                "page": "4",
+                "score": -11.118770599365234,
+                "text": "The meaning and business or application logic associated with the session ID must be stored\non the server side, and specifically, in session objects or in a session management database or\nrepository.\nThe stored information can include the client IP address, User-Agent, email, username, user ID,\nrole, privilege level, access rights, language preferences, account ID, current state, last login,\nsession timeouts, and other internal session details. If the session objects and properties\ncontain sensitive information, such as credit card numbers, it is required to duly encrypt and\nprotect the session management repository.\nIt is recommended to use the session ID created by your language or framework. If you need to\ncreate your own sessionID, use a cryptographically secure pseudorandom number generator\n(CSPRNG) with a size of at least 128 bits and ensure that each sessionID is unique.\nSession Management"
+            },
+            {
+                "number": 5,
+                "title": "Multifactor Authentication Cheat Sheet",
+                "issuer": "OWASP",
+                "page": "16",
+                "score": -11.195526123046875,
+                "text": "For more details on when to trigger reauthentication after high-risk events—such as account\nrecovery or suspicious activity—see the Reauthentication After Risk Events section in the\nAuthentication Cheat Sheet.\nThis method is widely used in modern authentication systems to balance usability and security.\nHowever, developers must ensure that risk signals cannot be spoofed and that fallback\nmechanisms are not weaker than the primary MFA methods.\nExample Use Case : A user logs in from a trusted device in a usual location — no additional\nprompt is needed. But if they log in from a new country using a Tor exit node, the system\nrequires SMS verification or triggers an account lock until further verification.\nMFA Attack Patterns and Mitigations¶\nAttackers increasingly target weaknesses in MFA deployments and authentication workflows\nrather than attempting to defeat MFA itself. The following sections describe common attack\npatterns and recommended mitigations based"
+            }
+        ],
+        "citation_validation": {
+            "valid": true,
+            "citation_count": 1,
+            "valid_citation_count": 1,
+            "errors": []
+        },
+        "latency_seconds": 10.38,
+        "api_latency": 4.92,
+        "cache_hit": false,
+        "status": "success",
+        "error": null
+    },
+    {
+        "test_id": "E2E-07",
+        "category": "Insufficient Evidence",
+        "question": "Which exact person sent me an anonymous phishing email?",
+        "answerable": false,
+        "answer": "Answer:\nThe available evidence is insufficient to identify the exact person who sent an anonymous phishing email. Phishing emails may come from strangers or cybercriminals [Evidence 1, p. 4] [Evidence 3, p. 3], but the provided text does not contain information to determine the exact individual sender.\n\nSources:\n- Digital Safety Compass Handbook | CERT-In | 4\n- Cyber Security Awareness Booklet | CERT-In | 4",
+        "evidence": [
+            {
+                "number": 1,
+                "title": "Digital Safety Compass Handbook",
+                "issuer": "CERT-In",
+                "page": "4",
+                "score": -2.5540084838867188,
+                "text": "Safety Practices\nPHISHING\nWEBSITE SCAMS\nScammers create fake websites and steal personal information such\nas banking details, card details, personal information.\nBe cautious while clicking on links &\nattachments in emails received from\nstrangers.\nNever\nshare\nsensitive\ndetails\nlike\npasswords or PINs via email or text.\nWatch for poor grammar or spelling\nmistakes, which can be signs of phishing.\nUse unique, complex passwords for each\naccount.\nExpand and verify shortened URLs before\nclicking on them.\nDon't bite\nthe\nphishing\nbait\nHow Attacks Work\nScammer sends\nfake email.\nEmail arrives in\ninbox with a link .\nVictim click on\nthe link.\nFake website asks\nsensitive information.\nVictim's enters\nthe information.\nUnauthorized access\nand data misuse.\n04\nCERT-In’s Digital Safety\nCompass Handbook"
+            },
+            {
+                "number": 2,
+                "title": "Cyber Security Awareness Booklet",
+                "issuer": "CERT-In",
+                "page": "4",
+                "score": -2.8339362144470215,
+                "text": "information or\nfinancial data.\nCarefully check the URL before clicking on it.\nNever react to the messages which shows urgency.\nDo not trust promotional offers which look “too good to be\ntrue”.\nDo not hesitate to report to Law Enforcement Agencies, if you\nbecome a victim of phishing.\nVerify the email ids in emails addressed to generic recipients.\nLook for typing errors (eg., Acc0unt, ema1l, dep0sit, passw0rd)\n“Do yu kare about yurself?” Look for poor grammar and\nunprofessional Language.\nSafety Tips"
+            },
+            {
+                "number": 3,
+                "title": "Cyber Security Awareness Booklet",
+                "issuer": "CERT-In",
+                "page": "4",
+                "score": -4.975512504577637,
+                "text": "Phishing\nYour bank account will get deactivated today due to inactivity on\nyour account. Click on the link to\n\"https:www/khasenterprise.in/reactivate/yourbank/loginform.htm\"\nstart the verification process to activate your account.\nURL require login\nYour Bank <khas@hello.org.in>\nTue, 07/02/2023\nDear Bank Customer,\nYour Bank\nYour account will restore after completing the process.\nThanks you for being a valuable customer.\nNot Your bank\nLink not going to your bank\nPhishing is a common method that cybercriminals use to do\nthe fraudulent activity by creating authentic-looking emails or\nwebsites to trick victims into sharing personal information or\nfinancial data.\nCarefully check the URL before clicking on it.\nNever react to the messages which shows urgency.\nDo not trust promotional offers which"
+            },
+            {
+                "number": 4,
+                "title": "Multifactor Authentication Cheat Sheet",
+                "issuer": "OWASP",
+                "page": "11",
+                "score": -6.290654182434082,
+                "text": "I.\nPros¶\n● Relatively simple to implement.\n● Requires user to link their account to a mobile number.\nCons¶\n● Requires the user to have a mobile device or landline.\n● Require user to have signal or internet access to receive the call or message.\n● Calls and SMS messages may cost money to send need to protect against attackers\nrequesting a large number of messages to exhaust funds.\n● Susceptible to SIM swapping attacks.\n● SMS messages may be received on the same device the user is authenticating from.\n● Susceptible to phishing.\n● SMS may be previewed when the device is locked.\n● SMS may be read by malicious or insecure applications.\nEmail¶\nEmail verification requires that the user enters a code or clicks a link sent to their email address.\nThere is some debate as to whether email constitutes a form of MFA, because if the user does\nnot have MFA configured on"
+            },
+            {
+                "number": 5,
+                "title": "Multifactor Authentication Cheat Sheet",
+                "issuer": "OWASP",
+                "page": "11",
+                "score": -9.74571704864502,
+                "text": "sent to their email address.\nThere is some debate as to whether email constitutes a form of MFA, because if the user does\nnot have MFA configured on their email account, it simply requires knowledge of the user's\nemail password (which is often the same as their application password). However, it is included\nhere for completeness.\nPros¶\n● Very easy to implement.\n● No requirements for separate hardware or a mobile device.\nCons¶\n● Relies entirely on the security of the email account, which often lacks MFA.\n● Email passwords are commonly the same as application passwords.\n● Provides no protection if the user's email is compromised first.\n● Email may be received by the same device the user is authenticating from."
+            }
+        ],
+        "citation_validation": {
+            "valid": false,
+            "citation_count": 2,
+            "valid_citation_count": 1,
+            "errors": [
+                "Page mismatch: Evidence 3 cites page 3, but retrieved evidence is page 4.",
+                "Uncited or unknown source listed: cyber security awareness booklet | cert-in | Page 4"
+            ]
+        },
+        "latency_seconds": 10.29,
+        "api_latency": 5.06,
+        "cache_hit": false,
+        "status": "success",
+        "error": null
+    },
+    {
+        "test_id": "E2E-08",
+        "category": "Account Security",
+        "question": "What should I do if I suspect that my online account has been compromised?",
+        "answerable": true,
+        "answer": "Answer:\nThe available evidence is insufficient to provide steps for what to do if you suspect that your online account has been compromised. The supplied evidence mentions that scammers may falsely claim your accounts are hacked [Evidence 1, p. 9], but it does not contain procedures for recovering or handling a genuinely compromised account.\n\nSources:\n- Digital Safety Compass Handbook | CERT-In | Page 9",
+        "evidence": [
+            {
+                "number": 1,
+                "title": "Digital Safety Compass Handbook",
+                "issuer": "CERT-In",
+                "page": "9",
+                "score": 3.1558895111083984,
+                "text": "Unknown\nTries to steal your personal or\nfinancial details by asking directly.\nTricks you into downloading\nharmful software or giving remote\naccess to your device.\nFalsely claims your bank or online\naccounts are hacked to make you\npanic.\nPHONE SCAMS\nVictims receive calls claiming to be from\ntelecom regulators/banks/service\nproviders stating there’s an issue with\ntheir service and scammers ask to install\napp or click links for remote access.\nIf in doubt, contact\nthe organization\ndirectly using official\nchannels.\nBlock scam numbers\nimmediately to\nprevent repeat calls\nand stay safe.\nNever share\npersonal, financial, or\nlogin details over the\nphone.\nStay Alert, Stay Secure\n09\nPAUSE AND THINK\nthe caller is likely to\nbe a scam\nCERT-In’s Digital Safety\nCompass Handbook"
+            },
+            {
+                "number": 2,
+                "title": "Cyber Security Awareness Booklet",
+                "issuer": "CERT-In",
+                "page": "8",
+                "score": 0.5238553285598755,
+                "text": "Profile\nSocial Media Frauds\nScammers use \"bots\" to trick unsuspecting users into making\nonline payments to accounts under their control, such as\nthrough internet banking or UPI transfers.\nFraudsters use Fake Profile of the victim :\nTo spread false or fake information.\nSends friend requests to other friends of victim to gain\nfinancial benefits.\nTo damage the reputation of the victim.\n1.\n2.\n3.\nAvoid sharing your personal information like address, mobile\nnumber, personal mail id and other sensitive identity related\ninformation on social media.\nDo not share your personal pictures online publicly on social\nmedia accounts.\nNever accept friend requests without appropriate verification and\nconfirmation.\nNever click on suspicious links or download any app recieved\nthrough messages until you verify the authenticity of the source.\nUse different passwords for different social media accounts and\nemails.\nEnable multi-factor authentication for social media accounts.\nDisable profile visibility from"
+            },
+            {
+                "number": 3,
+                "title": "Incident Response Recommendations",
+                "issuer": "NIST",
+                "page": "16",
+                "score": -2.7093729972839355,
+                "text": "malicious insiders or the service provider being compromised should be considered\nand addressed. Non-disclosure agreements (NDAs) and contracting clauses are options for\ndeterring the unauthorized disclosure of sensitive data.\n2.3. Incident Response Policies, Processes, and Procedures\nOrganizations should have policies that govern their cybersecurity incident response. While a\npolicy is highly individualized to the organization, most incident response policies include the\nsame key elements:\n• Statement of management commitment\n• Purpose and objectives of the policy\n• Scope of the policy (i.e., to whom and what it applies and under what circumstances)"
+            },
+            {
+                "number": 4,
+                "title": "Cyber Security Awareness Booklet",
+                "issuer": "CERT-In",
+                "page": "4",
+                "score": -5.251685619354248,
+                "text": "Phishing\nYour bank account will get deactivated today due to inactivity on\nyour account. Click on the link to\n\"https:www/khasenterprise.in/reactivate/yourbank/loginform.htm\"\nstart the verification process to activate your account.\nURL require login\nYour Bank <khas@hello.org.in>\nTue, 07/02/2023\nDear Bank Customer,\nYour Bank\nYour account will restore after completing the process.\nThanks you for being a valuable customer.\nNot Your bank\nLink not going to your bank\nPhishing is a common method that cybercriminals use to do\nthe fraudulent activity by creating authentic-looking emails or\nwebsites to trick victims into sharing personal information or\nfinancial data.\nCarefully check the URL before clicking on it.\nNever react to the messages which shows urgency.\nDo not trust promotional offers which"
+            },
+            {
+                "number": 5,
+                "title": "Digital Safety Compass Handbook",
+                "issuer": "CERT-In",
+                "page": "13",
+                "score": -5.5450239181518555,
+                "text": "Beware of calls, emails, or pop-ups claiming your computer has\nissues. Scammers often pose as trusted companies to create fear.\nUseful Techniques\nFAKE\nTECHNICAL\nASSISTANCE\nHang up if someone claims\nyour computer has a\nproblem; scammers often\nuse fake caller IDs.\nAvoid calling numbers or\nclicking links in pop-ups\nwarning of system issues.\nContact your security\nsoftware provider directly\nusing official contact\ndetails.\nSeek help only from\nverified cybersecurity\nprofessionals.\nNever share passwords or\ngrant remote access to\nunverified contacts.\nDirect to fake\nwebsites for\nsensitive info.\nRequest remote\naccess.\nEnrolls in Fake\nPrograms.\nInstall malware for\npassword access.\nDemand credit\ncard info for scams.\nTry to sell worthless\nservice/software.\n13\nScammer’s Tactics\nCERT-In’s Digital Safety\nCompass Handbook"
+            }
+        ],
+        "citation_validation": {
+            "valid": true,
+            "citation_count": 1,
+            "valid_citation_count": 1,
+            "errors": []
+        },
+        "latency_seconds": 12.34,
+        "api_latency": 4.76,
+        "cache_hit": false,
+        "status": "success",
+        "error": null
+    }
+]

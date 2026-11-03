@@ -1,0 +1,22 @@
+[
+    {
+        "strategy": "fixed",
+        "total_pages": 163,
+        "total_chunks": 430,
+        "average_tokens": 152.71,
+        "median_tokens": 180.0,
+        "min_tokens": 31,
+        "max_tokens": 180,
+        "small_chunks": 10
+    },
+    {
+        "strategy": "recursive",
+        "total_pages": 163,
+        "total_chunks": 465,
+        "average_tokens": 143.68,
+        "median_tokens": 157,
+        "min_tokens": 34,
+        "max_tokens": 180,
+        "small_chunks": 2
+    }
+]

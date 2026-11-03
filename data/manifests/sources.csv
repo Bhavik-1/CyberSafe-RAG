@@ -1,0 +1,9 @@
+source_id,title,issuer,category,audience,jurisdiction,publication_date,source_url,local_path
+CERTIN_2023,Cyber Security Awareness Booklet,CERT-In,phishing,general_user,India,2023,https://www.cert-in.org.in/PDF/CSA_Booklet.pdf,data/raw/cert_in/CSA_Booklet.pdf
+CERTIN_2024,Cyber Security Handbook,CERT-In,cyber_hygiene,general_user,India,2024-10,,data/raw/cert_in/CERT-In-NCSAM-Book_20241001.pdf
+CERTIN_2025,Digital Safety Compass Handbook,CERT-In,online_scams,general_user,India,2025-02-11,https://www.cert-in.org.in/PDF/CSH_Booklet25.pdf,data/raw/cert_in/CSH_Booklet25.pdf
+NIST_800_61R3,Incident Response Recommendations,NIST,incident_response,organization,US,2025-04,https://doi.org/10.6028/NIST.SP.800-61r3,data/raw/nist/NIST.SP.800-61r3.pdf
+OWASP_AUTH,Authentication Cheat Sheet,OWASP,authentication,developer,Global,,https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html,data/raw/owasp/authentication.pdf
+OWASP_MFA,Multifactor Authentication Cheat Sheet,OWASP,mfa,developer,Global,,https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html,data/raw/owasp/mfa.pdf
+OWASP_PASSWORD,Password Storage Cheat Sheet,OWASP,password_security,developer,Global,,https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html,data/raw/owasp/password_storage.pdf
+OWASP_SESSION,Session Management Cheat Sheet,OWASP,session_security,developer,Global,,https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html,data/raw/owasp/session_management.pdf

@@ -1,0 +1,71 @@
+{
+    "strategy": "fixed",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "gemini_model": "gemini-3.8-flash",
+    "generated_at": "2026-10-30T12:29:14.763273+00:00",
+    "results": [
+        {
+            "query": "Someone has created a fake Instagram profile using my photos and is messaging my friends asking for money. What should I do?",
+            "dense_count": 10,
+            "bm25_count": 10,
+            "candidate_count": 10,
+            "results": [
+                {
+                    "chunk_id": "CERTIN_2023_P8_FIXED_001",
+                    "source_id": "CERTIN_2023",
+                    "source_title": "Cyber Security Awareness Booklet",
+                    "issuer": "CERT-In",
+                    "page": 8,
+                    "text": "Profile\nSocial Media Frauds\nScammers use \"bots\" to trick unsuspecting users into making\nonline payments to accounts under their control, such as\nthrough internet banking or UPI transfers.\nFraudsters use Fake Profile of the victim :\nTo spread false or fake information.\nSends friend requests to other friends of victim to gain\nfinancial benefits.\nTo damage the reputation of the victim.\n1.\n2.\n3.\nAvoid sharing your personal information like address, mobile\nnumber, personal mail id and other sensitive identity related\ninformation on social media.\nDo not share your personal pictures online publicly on social\nmedia accounts.\nNever accept friend requests without appropriate verification and\nconfirmation.\nNever click on suspicious links or download any app recieved\nthrough messages until you verify the authenticity of the source.\nUse different passwords for different social media accounts and\nemails.\nEnable multi-factor authentication for social media accounts.\nDisable profile visibility from",
+                    "rrf_score": 0.032018442622950824,
+                    "cross_encoder_score": 1.4339717626571655
+                },
+                {
+                    "chunk_id": "CERTIN_2023_P11_FIXED_001",
+                    "source_id": "CERTIN_2023",
+                    "source_title": "Cyber Security Awareness Booklet",
+                    "issuer": "CERT-In",
+                    "page": 11,
+                    "text": "Attacks Targeting\nWomen\nMorphing is altering or changing the pictures of the person\nusing morphing tools available online. Young girls and women\nusually fall prey at the hands of the online criminals, who use\ntheir photographs posted online and misuse these images by\nmorphing the pictures.\nThe morphed pictures are then used by perpetrators for\nblackmailing the victims, creating fake online profile, sexting,\nsex chats, pornographic content, nude pictures etc.,\nMorphing can damage the victim's online reputation and cause\nemotional trauma, can also be prone to threats from\nperpetrators and may fall prey to their attempts at blackmailing\nthem.\nEnable your security and privacy features on social media\naccounts\nNever share your personal pictures online publicly on social\nmedia accounts\nUse watermark while sharing pictures\nEnable multi-factor authentication with strong passwords for\nyour social media accounts.\nSave the evidence and the screen shots for referring to",
+                    "rrf_score": 0.015384615384615385,
+                    "cross_encoder_score": -3.2575275897979736
+                },
+                {
+                    "chunk_id": "CERTIN_2023_P11_FIXED_002",
+                    "source_id": "CERTIN_2023",
+                    "source_title": "Cyber Security Awareness Booklet",
+                    "issuer": "CERT-In",
+                    "page": 11,
+                    "text": "watermark while sharing pictures\nEnable multi-factor authentication with strong passwords for\nyour social media accounts.\nSave the evidence and the screen shots for referring to the\nincident later.\nDon’t suffer in silence, know that you are not alone, reach out\nand seek help from trusted family and friends.\nIf you observe your fake profile or any such objectionable posts\nin social media, report to the respective social media help\ncentre.\nFake ID Card\nSocial Media Post\nAdult Website\nSafety Tips",
+                    "rrf_score": 0.03128054740957967,
+                    "cross_encoder_score": -3.943410873413086
+                },
+                {
+                    "chunk_id": "CERTIN_2025_P16_FIXED_002",
+                    "source_id": "CERTIN_2025",
+                    "source_title": "Digital Safety Compass Handbook",
+                    "issuer": "CERT-In",
+                    "page": 16,
+                    "text": "Once victims show interest,\nfraudsters ask for advance\nfees, or bank access and\nmakes the victim to install\nmalicious apps.\nVictims are lured into\nhigh-interest loans,\nmaking repayment\nnearly impossible.\nScammers extort money\nby manipulating photos\nand threatening victims.\nCERT-In’s Digital Safety\nCompass Handbook",
+                    "rrf_score": 0.030158730158730156,
+                    "cross_encoder_score": -5.747681140899658
+                },
+                {
+                    "chunk_id": "CERTIN_2025_P6_FIXED_001",
+                    "source_id": "CERTIN_2025",
+                    "source_title": "Digital Safety Compass Handbook",
+                    "issuer": "CERT-In",
+                    "page": 6,
+                    "text": "Scammers claim your package\nwas seized for illegal items like\ndrugs or prohibited items. Ignore\nsuch calls, emails, or messages.\nPackage\nFraud\nSEIZED\nSEIZED\nSEIZED\nScammers\npretend to be\ndelivery\nworkers/\nCustomer care\nexecutives to\ntrick people.\nThey tell\nvictims that\ntheir package\nhas illegal\nitems and\nmake them\nscared.\nThe call is\npassed to fake\nLaw\nenforcement\nofficers to\ncreate a fake\nthreat.\nVictims are\nthreatened to\npay money to\navoid arrest\nand\nreputational\ndamage.\nSafety Practices\nBeware of unsolicited calls or messages.\nVerify claims with official sources.\nDo not transfer money under pressure\nNever share sensitive personal information.\nResist threats and urgency tactics.\n06\nCERT-In’s Digital Safety\nCompass Handbook",
+                    "rrf_score": 0.01639344262295082,
+                    "cross_encoder_score": -7.106164932250977
+                }
+            ],
+            "answer": "Answer:\nBased on the provided evidence, here are the steps you should take:\n\n1. **Save evidence**: Take screenshots and save the evidence of the fake profile and messages for future reference [Evidence 2, p. 11; Evidence 3, p. 11].\n2. **Report the profile**: Report the impersonating profile directly to the social media platform's help centre [Evidence 3, p. 11].\n3. **Seek support**: Do not suffer in silence; reach out and seek help from trusted family and friends [Evidence 3, p. 11].\n4. **Strengthen account security and privacy**:\n   - Enable security and privacy features, and avoid sharing personal pictures publicly on social media [Evidence 1, p. 8; Evidence 2, p. 11].\n   - Enable multi-factor authentication and use strong, unique passwords across your accounts [Evidence 1, p. 8; Evidence 2, p. 11; Evidence 3, p. 11].\n   - Use watermarks when sharing pictures online [Evidence 2, p. 11; Evidence 3, p. 11].\n   - Avoid sharing sensitive personal identity information (such as address, phone number, or personal email) on social media [Evidence 1, p. 8].\n\n*Note on missing information:* The provided evidence does not contain Instagram-specific technical workflows, dedicated recovery URLs, or specific instructions for alerting your friends about the ongoing scam.\n\nSources:\n- Cyber Security Awareness Booklet | CERT-In | Page 8\n- Cyber Security Awareness Booklet | CERT-In | Page 11",
+            "status": "success",
+            "api_latency": 189.41,
+            "total_time": 189.87
+        }
+    ]
+}

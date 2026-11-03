@@ -1,0 +1,1623 @@
+{
+    "summary": {
+        "total_tests": 25,
+        "passed": 25,
+        "failed": 0,
+        "accuracy": 1.0,
+        "average_latency_seconds": 5.02,
+        "category_metrics": {
+            "SUPPORTED": {
+                "total": 5,
+                "passed": 5,
+                "failed": 0,
+                "accuracy": 1.0
+            },
+            "PARTIALLY_SUPPORTED": {
+                "total": 5,
+                "passed": 5,
+                "failed": 0,
+                "accuracy": 1.0
+            },
+            "UNSUPPORTED": {
+                "total": 10,
+                "passed": 10,
+                "failed": 0,
+                "accuracy": 1.0
+            },
+            "MISSING_CITATION": {
+                "total": 5,
+                "passed": 5,
+                "failed": 0,
+                "accuracy": 1.0
+            }
+        },
+        "confusion_matrix": {
+            "SUPPORTED": {
+                "SUPPORTED": 5,
+                "PARTIALLY_SUPPORTED": 0,
+                "UNSUPPORTED": 0,
+                "MISSING_CITATION": 0
+            },
+            "PARTIALLY_SUPPORTED": {
+                "SUPPORTED": 0,
+                "PARTIALLY_SUPPORTED": 5,
+                "UNSUPPORTED": 0,
+                "MISSING_CITATION": 0
+            },
+            "UNSUPPORTED": {
+                "SUPPORTED": 0,
+                "PARTIALLY_SUPPORTED": 0,
+                "UNSUPPORTED": 10,
+                "MISSING_CITATION": 0
+            },
+            "MISSING_CITATION": {
+                "SUPPORTED": 0,
+                "PARTIALLY_SUPPORTED": 0,
+                "UNSUPPORTED": 0,
+                "MISSING_CITATION": 5
+            }
+        }
+    },
+    "results": [
+        {
+            "test_id": "TEST-01",
+            "description": "Direct MFA support",
+            "expected": "SUPPORTED",
+            "predicted": "SUPPORTED",
+            "passed": true,
+            "latency_seconds": 5.23,
+            "claim_result": {
+                "claim": "Enable multi-factor authentication to add another layer of account security",
+                "status": "SUPPORTED",
+                "subclaims": [
+                    {
+                        "claim": "Enable multi-factor authentication to add another layer of account security",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-01: Enable multi-factor authentication to add another layer of account security [Evidence 1, p. 10].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 10,
+                                "source_title": "Multifactor Authentication Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "SUPPORTED",
+                        "reason": "Evidence 1 states: 'Enable Multi Factor Authentication (MFA) to add an extra layer of security to your accounts.'",
+                        "validation_errors": []
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 1,
+                "supported_count": 1,
+                "partially_supported_count": 0,
+                "unsupported_count": 0,
+                "missing_citation_count": 0,
+                "claims": [
+                    {
+                        "claim": "Enable multi-factor authentication to add another layer of account security",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-01: Enable multi-factor authentication to add another layer of account security [Evidence 1, p. 10].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 10,
+                                "source_title": "Multifactor Authentication Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "SUPPORTED",
+                        "reason": "Evidence 1 states: 'Enable Multi Factor Authentication (MFA) to add an extra layer of security to your accounts.'",
+                        "validation_errors": []
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-02",
+            "description": "Direct phishing support",
+            "expected": "SUPPORTED",
+            "predicted": "SUPPORTED",
+            "passed": true,
+            "latency_seconds": 4.34,
+            "claim_result": {
+                "claim": "Do not trust promotional offers that look too good to be true",
+                "status": "SUPPORTED",
+                "subclaims": [
+                    {
+                        "claim": "Do not trust promotional offers that look too good to be true",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-02: Do not trust promotional offers that look too good to be true [Evidence 1, p. 4].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 4,
+                                "source_title": "CERT-In Cyber Security Handbook",
+                                "issuer": "CERT-In"
+                            }
+                        ],
+                        "status": "SUPPORTED",
+                        "reason": "The cited evidence on page 4 states 'Do not trust promotional offers which look too good to be true.'",
+                        "validation_errors": []
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 1,
+                "supported_count": 1,
+                "partially_supported_count": 0,
+                "unsupported_count": 0,
+                "missing_citation_count": 0,
+                "claims": [
+                    {
+                        "claim": "Do not trust promotional offers that look too good to be true",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-02: Do not trust promotional offers that look too good to be true [Evidence 1, p. 4].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 4,
+                                "source_title": "CERT-In Cyber Security Handbook",
+                                "issuer": "CERT-In"
+                            }
+                        ],
+                        "status": "SUPPORTED",
+                        "reason": "The cited evidence on page 4 states 'Do not trust promotional offers which look too good to be true.'",
+                        "validation_errors": []
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-03",
+            "description": "Direct malware symptom support",
+            "expected": "SUPPORTED",
+            "predicted": "SUPPORTED",
+            "passed": true,
+            "latency_seconds": 14.08,
+            "claim_result": {
+                "claim": "A sudden drop in device performance can be a sign of malware",
+                "status": "SUPPORTED",
+                "subclaims": [
+                    {
+                        "claim": "A sudden drop in device performance can be a sign of malware",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-03: A sudden drop in device performance can be a sign of malware [Evidence 1, p. 7].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 7,
+                                "source_title": "Cyber Security Awareness Booklet",
+                                "issuer": "CERT-In"
+                            }
+                        ],
+                        "status": "SUPPORTED",
+                        "reason": "Evidence 1 states that a sudden drop in the performance of your device can be a sign of malware infection.",
+                        "validation_errors": []
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 1,
+                "supported_count": 1,
+                "partially_supported_count": 0,
+                "unsupported_count": 0,
+                "missing_citation_count": 0,
+                "claims": [
+                    {
+                        "claim": "A sudden drop in device performance can be a sign of malware",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-03: A sudden drop in device performance can be a sign of malware [Evidence 1, p. 7].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 7,
+                                "source_title": "Cyber Security Awareness Booklet",
+                                "issuer": "CERT-In"
+                            }
+                        ],
+                        "status": "SUPPORTED",
+                        "reason": "Evidence 1 states that a sudden drop in the performance of your device can be a sign of malware infection.",
+                        "validation_errors": []
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-04",
+            "description": "Direct incident response support",
+            "expected": "SUPPORTED",
+            "predicted": "SUPPORTED",
+            "passed": true,
+            "latency_seconds": 4.73,
+            "claim_result": {
+                "claim": "Incident response includes tracking incident status | Incident response includes documenting indicators of compromise",
+                "status": "SUPPORTED",
+                "subclaims": [
+                    {
+                        "claim": "Incident response includes tracking incident status",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-04: Incident response includes tracking incident status and documenting indicators of compromise [Evidence 1, p. 35].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 35,
+                                "source_title": "NIST SP 800-61 Revision 3",
+                                "issuer": "NIST"
+                            }
+                        ],
+                        "status": "SUPPORTED",
+                        "reason": "Evidence 1 states to 'Track the status of the incident'.",
+                        "validation_errors": []
+                    },
+                    {
+                        "claim": "Incident response includes documenting indicators of compromise",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-04: Incident response includes tracking incident status and documenting indicators of compromise [Evidence 1, p. 35].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 35,
+                                "source_title": "NIST SP 800-61 Revision 3",
+                                "issuer": "NIST"
+                            }
+                        ],
+                        "status": "SUPPORTED",
+                        "reason": "Evidence 1 includes tracking 'indicators of compromise'.",
+                        "validation_errors": []
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 2,
+                "supported_count": 2,
+                "partially_supported_count": 0,
+                "unsupported_count": 0,
+                "missing_citation_count": 0,
+                "claims": [
+                    {
+                        "claim": "Incident response includes tracking incident status",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-04: Incident response includes tracking incident status and documenting indicators of compromise [Evidence 1, p. 35].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 35,
+                                "source_title": "NIST SP 800-61 Revision 3",
+                                "issuer": "NIST"
+                            }
+                        ],
+                        "status": "SUPPORTED",
+                        "reason": "Evidence 1 states to 'Track the status of the incident'.",
+                        "validation_errors": []
+                    },
+                    {
+                        "claim": "Incident response includes documenting indicators of compromise",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-04: Incident response includes tracking incident status and documenting indicators of compromise [Evidence 1, p. 35].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 35,
+                                "source_title": "NIST SP 800-61 Revision 3",
+                                "issuer": "NIST"
+                            }
+                        ],
+                        "status": "SUPPORTED",
+                        "reason": "Evidence 1 includes tracking 'indicators of compromise'.",
+                        "validation_errors": []
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-05",
+            "description": "Direct account security support",
+            "expected": "SUPPORTED",
+            "predicted": "SUPPORTED",
+            "passed": true,
+            "latency_seconds": 4.88,
+            "claim_result": {
+                "claim": "MFA provides an additional layer of security for accounts",
+                "status": "SUPPORTED",
+                "subclaims": [
+                    {
+                        "claim": "MFA provides an additional layer of security for accounts",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-05: MFA provides an additional layer of security for accounts [Evidence 1, p. 10].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 10,
+                                "source_title": "Multifactor Authentication Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "SUPPORTED",
+                        "reason": "Evidence 1 states to 'Enable Multi Factor Authentication (MFA) to add an extra layer of security to your accounts.'",
+                        "validation_errors": []
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 1,
+                "supported_count": 1,
+                "partially_supported_count": 0,
+                "unsupported_count": 0,
+                "missing_citation_count": 0,
+                "claims": [
+                    {
+                        "claim": "MFA provides an additional layer of security for accounts",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-05: MFA provides an additional layer of security for accounts [Evidence 1, p. 10].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 10,
+                                "source_title": "Multifactor Authentication Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "SUPPORTED",
+                        "reason": "Evidence 1 states to 'Enable Multi Factor Authentication (MFA) to add an extra layer of security to your accounts.'",
+                        "validation_errors": []
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-06",
+            "description": "MFA guarantee exaggeration",
+            "expected": "PARTIALLY_SUPPORTED",
+            "predicted": "PARTIALLY_SUPPORTED",
+            "passed": true,
+            "latency_seconds": 4.87,
+            "claim_result": {
+                "claim": "TEST-06: MFA adds another security layer | and guarantees that accounts cannot be compromised",
+                "status": "PARTIALLY_SUPPORTED",
+                "subclaims": [
+                    {
+                        "claim": "TEST-06: MFA adds another security layer",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-06: MFA adds another security layer and guarantees that accounts cannot be compromised [Evidence 1, p. 10].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 10,
+                                "source_title": "Multifactor Authentication Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "SUPPORTED",
+                        "reason": "The evidence states to 'Enable Multi Factor Authentication (MFA) to add an extra layer of security to your accounts.'",
+                        "validation_errors": []
+                    },
+                    {
+                        "claim": "and guarantees that accounts cannot be compromised",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-06: MFA adds another security layer and guarantees that accounts cannot be compromised [Evidence 1, p. 10].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 10,
+                                "source_title": "Multifactor Authentication Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence does not state that MFA guarantees accounts cannot be compromised; it only mentions adding an extra layer of security.",
+                        "validation_errors": []
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 2,
+                "supported_count": 1,
+                "partially_supported_count": 0,
+                "unsupported_count": 1,
+                "missing_citation_count": 0,
+                "claims": [
+                    {
+                        "claim": "TEST-06: MFA adds another security layer",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-06: MFA adds another security layer and guarantees that accounts cannot be compromised [Evidence 1, p. 10].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 10,
+                                "source_title": "Multifactor Authentication Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "SUPPORTED",
+                        "reason": "The evidence states to 'Enable Multi Factor Authentication (MFA) to add an extra layer of security to your accounts.'",
+                        "validation_errors": []
+                    },
+                    {
+                        "claim": "and guarantees that accounts cannot be compromised",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-06: MFA adds another security layer and guarantees that accounts cannot be compromised [Evidence 1, p. 10].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 10,
+                                "source_title": "Multifactor Authentication Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence does not state that MFA guarantees accounts cannot be compromised; it only mentions adding an extra layer of security.",
+                        "validation_errors": []
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-07",
+            "description": "Partially supported phishing indicators",
+            "expected": "PARTIALLY_SUPPORTED",
+            "predicted": "PARTIALLY_SUPPORTED",
+            "passed": true,
+            "latency_seconds": 5.52,
+            "claim_result": {
+                "claim": "Urgency and poor grammar are indicators of suspicious messages",
+                "status": "PARTIALLY_SUPPORTED",
+                "subclaims": [
+                    {
+                        "claim": "Urgency and poor grammar are indicators of suspicious messages",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-07: Urgency and poor grammar are indicators of suspicious messages [Evidence 1, p. 4].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 4,
+                                "source_title": "CERT-In Cyber Security Handbook",
+                                "issuer": "CERT-In"
+                            }
+                        ],
+                        "status": "PARTIALLY_SUPPORTED",
+                        "reason": "The evidence states to never react to messages showing urgency, but does not mention poor grammar as an indicator.",
+                        "validation_errors": []
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 1,
+                "supported_count": 0,
+                "partially_supported_count": 1,
+                "unsupported_count": 0,
+                "missing_citation_count": 0,
+                "claims": [
+                    {
+                        "claim": "Urgency and poor grammar are indicators of suspicious messages",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-07: Urgency and poor grammar are indicators of suspicious messages [Evidence 1, p. 4].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 4,
+                                "source_title": "CERT-In Cyber Security Handbook",
+                                "issuer": "CERT-In"
+                            }
+                        ],
+                        "status": "PARTIALLY_SUPPORTED",
+                        "reason": "The evidence states to never react to messages showing urgency, but does not mention poor grammar as an indicator.",
+                        "validation_errors": []
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-08",
+            "description": "Incident response scope exaggeration",
+            "expected": "PARTIALLY_SUPPORTED",
+            "predicted": "PARTIALLY_SUPPORTED",
+            "passed": true,
+            "latency_seconds": 5.32,
+            "claim_result": {
+                "claim": "Incident response involves tracking incident status | always requires public notification",
+                "status": "PARTIALLY_SUPPORTED",
+                "subclaims": [
+                    {
+                        "claim": "Incident response involves tracking incident status",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-08: Incident response involves tracking incident status and always requires public notification [Evidence 1, p. 35].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 35,
+                                "source_title": "NIST SP 800-61 Revision 3",
+                                "issuer": "NIST"
+                            }
+                        ],
+                        "status": "SUPPORTED",
+                        "reason": "The evidence states to 'Track the status of the incident'.",
+                        "validation_errors": []
+                    },
+                    {
+                        "claim": "always requires public notification",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-08: Incident response involves tracking incident status and always requires public notification [Evidence 1, p. 35].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 35,
+                                "source_title": "NIST SP 800-61 Revision 3",
+                                "issuer": "NIST"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence does not mention public notification.",
+                        "validation_errors": []
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 2,
+                "supported_count": 1,
+                "partially_supported_count": 0,
+                "unsupported_count": 1,
+                "missing_citation_count": 0,
+                "claims": [
+                    {
+                        "claim": "Incident response involves tracking incident status",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-08: Incident response involves tracking incident status and always requires public notification [Evidence 1, p. 35].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 35,
+                                "source_title": "NIST SP 800-61 Revision 3",
+                                "issuer": "NIST"
+                            }
+                        ],
+                        "status": "SUPPORTED",
+                        "reason": "The evidence states to 'Track the status of the incident'.",
+                        "validation_errors": []
+                    },
+                    {
+                        "claim": "always requires public notification",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-08: Incident response involves tracking incident status and always requires public notification [Evidence 1, p. 35].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 35,
+                                "source_title": "NIST SP 800-61 Revision 3",
+                                "issuer": "NIST"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence does not mention public notification.",
+                        "validation_errors": []
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-09",
+            "description": "Password storage overgeneralization",
+            "expected": "PARTIALLY_SUPPORTED",
+            "predicted": "PARTIALLY_SUPPORTED",
+            "passed": true,
+            "latency_seconds": 4.22,
+            "claim_result": {
+                "claim": "Passwords should generally be stored using secure hashing | encryption must never be used in any circumstance",
+                "status": "PARTIALLY_SUPPORTED",
+                "subclaims": [
+                    {
+                        "claim": "Passwords should generally be stored using secure hashing",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-09: Passwords should generally be stored using secure hashing, and encryption must never be used in any circumstance [Evidence 1, p. 1].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 1,
+                                "source_title": "Password Storage Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "PARTIALLY_SUPPORTED",
+                        "reason": "The evidence states that passwords should be hashed rather than encrypted in almost all circumstances, but does not explicitly mention \"secure hashing\" or \"stored using\".",
+                        "validation_errors": []
+                    },
+                    {
+                        "claim": "encryption must never be used in any circumstance",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-09: Passwords should generally be stored using secure hashing, and encryption must never be used in any circumstance [Evidence 1, p. 1].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 1,
+                                "source_title": "Password Storage Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The claim states that encryption must never be used in any circumstance, whereas the evidence states they should be hashed rather than encrypted in \"almost all circumstances\", implying exceptions exist.",
+                        "validation_errors": []
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 2,
+                "supported_count": 0,
+                "partially_supported_count": 1,
+                "unsupported_count": 1,
+                "missing_citation_count": 0,
+                "claims": [
+                    {
+                        "claim": "Passwords should generally be stored using secure hashing",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-09: Passwords should generally be stored using secure hashing, and encryption must never be used in any circumstance [Evidence 1, p. 1].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 1,
+                                "source_title": "Password Storage Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "PARTIALLY_SUPPORTED",
+                        "reason": "The evidence states that passwords should be hashed rather than encrypted in almost all circumstances, but does not explicitly mention \"secure hashing\" or \"stored using\".",
+                        "validation_errors": []
+                    },
+                    {
+                        "claim": "encryption must never be used in any circumstance",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-09: Passwords should generally be stored using secure hashing, and encryption must never be used in any circumstance [Evidence 1, p. 1].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 1,
+                                "source_title": "Password Storage Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The claim states that encryption must never be used in any circumstance, whereas the evidence states they should be hashed rather than encrypted in \"almost all circumstances\", implying exceptions exist.",
+                        "validation_errors": []
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-10",
+            "description": "Recovery process overgeneralization",
+            "expected": "PARTIALLY_SUPPORTED",
+            "predicted": "PARTIALLY_SUPPORTED",
+            "passed": true,
+            "latency_seconds": 4.69,
+            "claim_result": {
+                "claim": "Incident response includes recovery decisions | every incident must immediately trigger full system restoration",
+                "status": "PARTIALLY_SUPPORTED",
+                "subclaims": [
+                    {
+                        "claim": "Incident response includes recovery decisions",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-10: Incident response includes recovery decisions, and every incident must immediately trigger full system restoration [Evidence 1, p. 34].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 34,
+                                "source_title": "NIST SP 800-61 Revision 3",
+                                "issuer": "NIST"
+                            }
+                        ],
+                        "status": "SUPPORTED",
+                        "reason": "The evidence states that incident triage includes decisions about initiating recovery.",
+                        "validation_errors": []
+                    },
+                    {
+                        "claim": "every incident must immediately trigger full system restoration",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-10: Incident response includes recovery decisions, and every incident must immediately trigger full system restoration [Evidence 1, p. 34].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 34,
+                                "source_title": "NIST SP 800-61 Revision 3",
+                                "issuer": "NIST"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence states that recovery decisions are based on risk factors, not that every incident must immediately trigger full system restoration.",
+                        "validation_errors": []
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 2,
+                "supported_count": 1,
+                "partially_supported_count": 0,
+                "unsupported_count": 1,
+                "missing_citation_count": 0,
+                "claims": [
+                    {
+                        "claim": "Incident response includes recovery decisions",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-10: Incident response includes recovery decisions, and every incident must immediately trigger full system restoration [Evidence 1, p. 34].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 34,
+                                "source_title": "NIST SP 800-61 Revision 3",
+                                "issuer": "NIST"
+                            }
+                        ],
+                        "status": "SUPPORTED",
+                        "reason": "The evidence states that incident triage includes decisions about initiating recovery.",
+                        "validation_errors": []
+                    },
+                    {
+                        "claim": "every incident must immediately trigger full system restoration",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-10: Incident response includes recovery decisions, and every incident must immediately trigger full system restoration [Evidence 1, p. 34].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 34,
+                                "source_title": "NIST SP 800-61 Revision 3",
+                                "issuer": "NIST"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence states that recovery decisions are based on risk factors, not that every incident must immediately trigger full system restoration.",
+                        "validation_errors": []
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-11",
+            "description": "Unrelated evidence",
+            "expected": "UNSUPPORTED",
+            "predicted": "UNSUPPORTED",
+            "passed": true,
+            "latency_seconds": 4.86,
+            "claim_result": {
+                "claim": "TEST-11: Phishing emails always contain grammatical errors",
+                "status": "UNSUPPORTED",
+                "subclaims": [
+                    {
+                        "claim": "TEST-11: Phishing emails always contain grammatical errors",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-11: Phishing emails always contain grammatical errors [Evidence 1, p. 10].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 10,
+                                "source_title": "Multifactor Authentication Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The cited evidence discusses enabling Multi Factor Authentication (MFA), not phishing emails or grammatical errors.",
+                        "validation_errors": []
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 1,
+                "supported_count": 0,
+                "partially_supported_count": 0,
+                "unsupported_count": 1,
+                "missing_citation_count": 0,
+                "claims": [
+                    {
+                        "claim": "TEST-11: Phishing emails always contain grammatical errors",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-11: Phishing emails always contain grammatical errors [Evidence 1, p. 10].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 10,
+                                "source_title": "Multifactor Authentication Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The cited evidence discusses enabling Multi Factor Authentication (MFA), not phishing emails or grammatical errors.",
+                        "validation_errors": []
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-12",
+            "description": "Unsupported malware claim",
+            "expected": "UNSUPPORTED",
+            "predicted": "UNSUPPORTED",
+            "passed": true,
+            "latency_seconds": 4.04,
+            "claim_result": {
+                "claim": "Malware always causes a device battery to explode",
+                "status": "UNSUPPORTED",
+                "subclaims": [
+                    {
+                        "claim": "Malware always causes a device battery to explode",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-12: Malware always causes a device battery to explode [Evidence 1, p. 7].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 7,
+                                "source_title": "Cyber Security Awareness Booklet",
+                                "issuer": "CERT-In"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence states that a sudden drop in performance can be a sign of malware infection, but does not state that malware causes a device battery to explode.",
+                        "validation_errors": []
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 1,
+                "supported_count": 0,
+                "partially_supported_count": 0,
+                "unsupported_count": 1,
+                "missing_citation_count": 0,
+                "claims": [
+                    {
+                        "claim": "Malware always causes a device battery to explode",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-12: Malware always causes a device battery to explode [Evidence 1, p. 7].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 7,
+                                "source_title": "Cyber Security Awareness Booklet",
+                                "issuer": "CERT-In"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence states that a sudden drop in performance can be a sign of malware infection, but does not state that malware causes a device battery to explode.",
+                        "validation_errors": []
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-13",
+            "description": "Unsupported MFA claim",
+            "expected": "UNSUPPORTED",
+            "predicted": "UNSUPPORTED",
+            "passed": true,
+            "latency_seconds": 4.43,
+            "claim_result": {
+                "claim": "MFA eliminates the need for passwords completely",
+                "status": "UNSUPPORTED",
+                "subclaims": [
+                    {
+                        "claim": "MFA eliminates the need for passwords completely",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-13: MFA eliminates the need for passwords completely [Evidence 1, p. 10].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 10,
+                                "source_title": "Multifactor Authentication Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence states that MFA adds an extra layer of security, but it does not state that it eliminates the need for passwords completely.",
+                        "validation_errors": []
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 1,
+                "supported_count": 0,
+                "partially_supported_count": 0,
+                "unsupported_count": 1,
+                "missing_citation_count": 0,
+                "claims": [
+                    {
+                        "claim": "MFA eliminates the need for passwords completely",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-13: MFA eliminates the need for passwords completely [Evidence 1, p. 10].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 10,
+                                "source_title": "Multifactor Authentication Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence states that MFA adds an extra layer of security, but it does not state that it eliminates the need for passwords completely.",
+                        "validation_errors": []
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-14",
+            "description": "Unsupported incident response claim",
+            "expected": "UNSUPPORTED",
+            "predicted": "UNSUPPORTED",
+            "passed": true,
+            "latency_seconds": 4.83,
+            "claim_result": {
+                "claim": "NIST requires every cyber incident to be resolved within one hour",
+                "status": "UNSUPPORTED",
+                "subclaims": [
+                    {
+                        "claim": "NIST requires every cyber incident to be resolved within one hour",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-14: NIST requires every cyber incident to be resolved within one hour [Evidence 1, p. 35].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 35,
+                                "source_title": "NIST SP 800-61 Revision 3",
+                                "issuer": "NIST"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The cited evidence mentions tracking the status of the incident, time frames, and other details, but does not state that NIST requires every incident to be resolved within one hour.",
+                        "validation_errors": []
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 1,
+                "supported_count": 0,
+                "partially_supported_count": 0,
+                "unsupported_count": 1,
+                "missing_citation_count": 0,
+                "claims": [
+                    {
+                        "claim": "NIST requires every cyber incident to be resolved within one hour",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-14: NIST requires every cyber incident to be resolved within one hour [Evidence 1, p. 35].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 35,
+                                "source_title": "NIST SP 800-61 Revision 3",
+                                "issuer": "NIST"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The cited evidence mentions tracking the status of the incident, time frames, and other details, but does not state that NIST requires every incident to be resolved within one hour.",
+                        "validation_errors": []
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-15",
+            "description": "Unsupported password claim",
+            "expected": "UNSUPPORTED",
+            "predicted": "UNSUPPORTED",
+            "passed": true,
+            "latency_seconds": 4.5,
+            "claim_result": {
+                "claim": "Storing passwords as plain text is the recommended secure practice",
+                "status": "UNSUPPORTED",
+                "subclaims": [
+                    {
+                        "claim": "Storing passwords as plain text is the recommended secure practice",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-15: Storing passwords as plain text is the recommended secure practice [Evidence 1, p. 1].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 1,
+                                "source_title": "Password Storage Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence states that passwords should be hashed rather than encrypted, contradicting the claim that storing passwords as plain text is recommended.",
+                        "validation_errors": []
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 1,
+                "supported_count": 0,
+                "partially_supported_count": 0,
+                "unsupported_count": 1,
+                "missing_citation_count": 0,
+                "claims": [
+                    {
+                        "claim": "Storing passwords as plain text is the recommended secure practice",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-15: Storing passwords as plain text is the recommended secure practice [Evidence 1, p. 1].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 1,
+                                "source_title": "Password Storage Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence states that passwords should be hashed rather than encrypted, contradicting the claim that storing passwords as plain text is recommended.",
+                        "validation_errors": []
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-16",
+            "description": "MFA claim without citation",
+            "expected": "MISSING_CITATION",
+            "predicted": "MISSING_CITATION",
+            "passed": true,
+            "latency_seconds": 4.17,
+            "claim_result": {
+                "claim": "TEST-16: MFA adds another layer of account security.",
+                "status": "MISSING_CITATION",
+                "subclaims": [
+                    {
+                        "claim": "TEST-16: MFA adds another layer of account security.",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-16: MFA adds another layer of account security.",
+                        "citations": [],
+                        "status": "MISSING_CITATION",
+                        "reason": "The original sentence has no citation.",
+                        "validation_errors": [
+                            "No valid citation was attached to the original sentence containing this claim."
+                        ]
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 1,
+                "supported_count": 0,
+                "partially_supported_count": 0,
+                "unsupported_count": 0,
+                "missing_citation_count": 1,
+                "claims": [
+                    {
+                        "claim": "TEST-16: MFA adds another layer of account security.",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-16: MFA adds another layer of account security.",
+                        "citations": [],
+                        "status": "MISSING_CITATION",
+                        "reason": "The original sentence has no citation.",
+                        "validation_errors": [
+                            "No valid citation was attached to the original sentence containing this claim."
+                        ]
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-17",
+            "description": "Phishing claim without citation",
+            "expected": "MISSING_CITATION",
+            "predicted": "MISSING_CITATION",
+            "passed": true,
+            "latency_seconds": 4.26,
+            "claim_result": {
+                "claim": "TEST-17: Users should be cautious of messages that create urgency.",
+                "status": "MISSING_CITATION",
+                "subclaims": [
+                    {
+                        "claim": "TEST-17: Users should be cautious of messages that create urgency.",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-17: Users should be cautious of messages that create urgency.",
+                        "citations": [],
+                        "status": "MISSING_CITATION",
+                        "reason": "The evidence advises to 'Never react to messages which show urgency', which supports being cautious of urgency, but the sentence contains additional elements not explicitly detailed in that exact phrasing.",
+                        "validation_errors": [
+                            "No valid citation was attached to the original sentence containing this claim."
+                        ]
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 1,
+                "supported_count": 0,
+                "partially_supported_count": 0,
+                "unsupported_count": 0,
+                "missing_citation_count": 1,
+                "claims": [
+                    {
+                        "claim": "TEST-17: Users should be cautious of messages that create urgency.",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-17: Users should be cautious of messages that create urgency.",
+                        "citations": [],
+                        "status": "MISSING_CITATION",
+                        "reason": "The evidence advises to 'Never react to messages which show urgency', which supports being cautious of urgency, but the sentence contains additional elements not explicitly detailed in that exact phrasing.",
+                        "validation_errors": [
+                            "No valid citation was attached to the original sentence containing this claim."
+                        ]
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-18",
+            "description": "Malware claim without citation",
+            "expected": "MISSING_CITATION",
+            "predicted": "MISSING_CITATION",
+            "passed": true,
+            "latency_seconds": 4.61,
+            "claim_result": {
+                "claim": "TEST-18: Unexpected pop-ups can be a sign of malware.",
+                "status": "MISSING_CITATION",
+                "subclaims": [
+                    {
+                        "claim": "TEST-18: Unexpected pop-ups can be a sign of malware.",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-18: Unexpected pop-ups can be a sign of malware.",
+                        "citations": [],
+                        "status": "MISSING_CITATION",
+                        "reason": "The original sentence has no citation.",
+                        "validation_errors": [
+                            "No valid citation was attached to the original sentence containing this claim."
+                        ]
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 1,
+                "supported_count": 0,
+                "partially_supported_count": 0,
+                "unsupported_count": 0,
+                "missing_citation_count": 1,
+                "claims": [
+                    {
+                        "claim": "TEST-18: Unexpected pop-ups can be a sign of malware.",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-18: Unexpected pop-ups can be a sign of malware.",
+                        "citations": [],
+                        "status": "MISSING_CITATION",
+                        "reason": "The original sentence has no citation.",
+                        "validation_errors": [
+                            "No valid citation was attached to the original sentence containing this claim."
+                        ]
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-19",
+            "description": "Password claim without citation",
+            "expected": "MISSING_CITATION",
+            "predicted": "MISSING_CITATION",
+            "passed": true,
+            "latency_seconds": 4.83,
+            "claim_result": {
+                "claim": "Passwords should be securely hashed before storage.",
+                "status": "MISSING_CITATION",
+                "subclaims": [
+                    {
+                        "claim": "Passwords should be securely hashed before storage.",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-19: Passwords should be securely hashed before storage.",
+                        "citations": [],
+                        "status": "MISSING_CITATION",
+                        "reason": "The evidence states that passwords should be hashed rather than encrypted, but it does not mention the term 'securely hashed' or 'before storage'.",
+                        "validation_errors": [
+                            "No valid citation was attached to the original sentence containing this claim."
+                        ]
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 1,
+                "supported_count": 0,
+                "partially_supported_count": 0,
+                "unsupported_count": 0,
+                "missing_citation_count": 1,
+                "claims": [
+                    {
+                        "claim": "Passwords should be securely hashed before storage.",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-19: Passwords should be securely hashed before storage.",
+                        "citations": [],
+                        "status": "MISSING_CITATION",
+                        "reason": "The evidence states that passwords should be hashed rather than encrypted, but it does not mention the term 'securely hashed' or 'before storage'.",
+                        "validation_errors": [
+                            "No valid citation was attached to the original sentence containing this claim."
+                        ]
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-20",
+            "description": "Incident response claim without citation",
+            "expected": "MISSING_CITATION",
+            "predicted": "MISSING_CITATION",
+            "passed": true,
+            "latency_seconds": 3.99,
+            "claim_result": {
+                "claim": "TEST-20: Incident response includes documenting indicators of compromise.",
+                "status": "MISSING_CITATION",
+                "subclaims": [
+                    {
+                        "claim": "TEST-20: Incident response includes documenting indicators of compromise.",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-20: Incident response includes documenting indicators of compromise.",
+                        "citations": [],
+                        "status": "MISSING_CITATION",
+                        "reason": "The original sentence has no citation attached to it.",
+                        "validation_errors": [
+                            "No valid citation was attached to the original sentence containing this claim."
+                        ]
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 1,
+                "supported_count": 0,
+                "partially_supported_count": 0,
+                "unsupported_count": 0,
+                "missing_citation_count": 1,
+                "claims": [
+                    {
+                        "claim": "TEST-20: Incident response includes documenting indicators of compromise.",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-20: Incident response includes documenting indicators of compromise.",
+                        "citations": [],
+                        "status": "MISSING_CITATION",
+                        "reason": "The original sentence has no citation attached to it.",
+                        "validation_errors": [
+                            "No valid citation was attached to the original sentence containing this claim."
+                        ]
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-21",
+            "description": "Contradiction about promotional offers",
+            "expected": "UNSUPPORTED",
+            "predicted": "UNSUPPORTED",
+            "passed": true,
+            "latency_seconds": 4.23,
+            "claim_result": {
+                "claim": "Users should trust promotional offers that look too good to be true",
+                "status": "UNSUPPORTED",
+                "subclaims": [
+                    {
+                        "claim": "Users should trust promotional offers that look too good to be true",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-21: Users should trust promotional offers that look too good to be true [Evidence 1, p. 4].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 4,
+                                "source_title": "CERT-In Cyber Security Handbook",
+                                "issuer": "CERT-In"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence explicitly states 'Do not trust promotional offers which look too good to be true.'",
+                        "validation_errors": []
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 1,
+                "supported_count": 0,
+                "partially_supported_count": 0,
+                "unsupported_count": 1,
+                "missing_citation_count": 0,
+                "claims": [
+                    {
+                        "claim": "Users should trust promotional offers that look too good to be true",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-21: Users should trust promotional offers that look too good to be true [Evidence 1, p. 4].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 4,
+                                "source_title": "CERT-In Cyber Security Handbook",
+                                "issuer": "CERT-In"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence explicitly states 'Do not trust promotional offers which look too good to be true.'",
+                        "validation_errors": []
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-22",
+            "description": "Contradiction about MFA security",
+            "expected": "UNSUPPORTED",
+            "predicted": "UNSUPPORTED",
+            "passed": true,
+            "latency_seconds": 4.87,
+            "claim_result": {
+                "claim": "OWASP recommends disabling MFA to improve account security",
+                "status": "UNSUPPORTED",
+                "subclaims": [
+                    {
+                        "claim": "OWASP recommends disabling MFA to improve account security",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-22: OWASP recommends disabling MFA to improve account security [Evidence 1, p. 10].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 10,
+                                "source_title": "Multifactor Authentication Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence states to 'Enable Multi Factor Authentication (MFA)', which contradicts the claim that OWASP recommends disabling it.",
+                        "validation_errors": []
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 1,
+                "supported_count": 0,
+                "partially_supported_count": 0,
+                "unsupported_count": 1,
+                "missing_citation_count": 0,
+                "claims": [
+                    {
+                        "claim": "OWASP recommends disabling MFA to improve account security",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-22: OWASP recommends disabling MFA to improve account security [Evidence 1, p. 10].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 10,
+                                "source_title": "Multifactor Authentication Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence states to 'Enable Multi Factor Authentication (MFA)', which contradicts the claim that OWASP recommends disabling it.",
+                        "validation_errors": []
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-23",
+            "description": "Contradiction about password storage",
+            "expected": "UNSUPPORTED",
+            "predicted": "UNSUPPORTED",
+            "passed": true,
+            "latency_seconds": 4.03,
+            "claim_result": {
+                "claim": "OWASP recommends storing passwords in plain text rather than hashing them",
+                "status": "UNSUPPORTED",
+                "subclaims": [
+                    {
+                        "claim": "OWASP recommends storing passwords in plain text rather than hashing them",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-23: OWASP recommends storing passwords in plain text rather than hashing them [Evidence 1, p. 1].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 1,
+                                "source_title": "Password Storage Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence states that passwords should be hashed rather than encrypted, contradicting the claim that they should be stored in plain text.",
+                        "validation_errors": []
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 1,
+                "supported_count": 0,
+                "partially_supported_count": 0,
+                "unsupported_count": 1,
+                "missing_citation_count": 0,
+                "claims": [
+                    {
+                        "claim": "OWASP recommends storing passwords in plain text rather than hashing them",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-23: OWASP recommends storing passwords in plain text rather than hashing them [Evidence 1, p. 1].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 1,
+                                "source_title": "Password Storage Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence states that passwords should be hashed rather than encrypted, contradicting the claim that they should be stored in plain text.",
+                        "validation_errors": []
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-24",
+            "description": "Contradiction about urgency",
+            "expected": "UNSUPPORTED",
+            "predicted": "UNSUPPORTED",
+            "passed": true,
+            "latency_seconds": 4.11,
+            "claim_result": {
+                "claim": "CERT-In recommends reacting immediately to messages that show urgency",
+                "status": "UNSUPPORTED",
+                "subclaims": [
+                    {
+                        "claim": "CERT-In recommends reacting immediately to messages that show urgency",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-24: CERT-In recommends reacting immediately to messages that show urgency [Evidence 1, p. 4].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 4,
+                                "source_title": "CERT-In Cyber Security Handbook",
+                                "issuer": "CERT-In"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence states 'Never react to messages which show urgency.', which directly contradicts the claim that CERT-In recommends reacting immediately to them.",
+                        "validation_errors": []
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 1,
+                "supported_count": 0,
+                "partially_supported_count": 0,
+                "unsupported_count": 1,
+                "missing_citation_count": 0,
+                "claims": [
+                    {
+                        "claim": "CERT-In recommends reacting immediately to messages that show urgency",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-24: CERT-In recommends reacting immediately to messages that show urgency [Evidence 1, p. 4].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 4,
+                                "source_title": "CERT-In Cyber Security Handbook",
+                                "issuer": "CERT-In"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence states 'Never react to messages which show urgency.', which directly contradicts the claim that CERT-In recommends reacting immediately to them.",
+                        "validation_errors": []
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        },
+        {
+            "test_id": "TEST-25",
+            "description": "Contradiction about MFA protection",
+            "expected": "UNSUPPORTED",
+            "predicted": "UNSUPPORTED",
+            "passed": true,
+            "latency_seconds": 5.8,
+            "claim_result": {
+                "claim": "OWASP states that MFA reduces account security",
+                "status": "UNSUPPORTED",
+                "subclaims": [
+                    {
+                        "claim": "OWASP states that MFA reduces account security",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-25: OWASP states that MFA reduces account security [Evidence 1, p. 10].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 10,
+                                "source_title": "Multifactor Authentication Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence states that MFA adds an extra layer of security, which contradicts the claim that it reduces account security.",
+                        "validation_errors": []
+                    }
+                ],
+                "aggregation_method": "sentence_level_claim_aggregation"
+            },
+            "verifier_response": {
+                "status": "completed",
+                "claim_count": 1,
+                "supported_count": 0,
+                "partially_supported_count": 0,
+                "unsupported_count": 1,
+                "missing_citation_count": 0,
+                "claims": [
+                    {
+                        "claim": "OWASP states that MFA reduces account security",
+                        "segment_id": 1,
+                        "original_sentence": "TEST-25: OWASP states that MFA reduces account security [Evidence 1, p. 10].",
+                        "citations": [
+                            {
+                                "evidence_number": 1,
+                                "page": 10,
+                                "source_title": "Multifactor Authentication Cheat Sheet",
+                                "issuer": "OWASP"
+                            }
+                        ],
+                        "status": "UNSUPPORTED",
+                        "reason": "The evidence states that MFA adds an extra layer of security, which contradicts the claim that it reduces account security.",
+                        "validation_errors": []
+                    }
+                ],
+                "method": "LLM-assisted semantic verification with Python sentence-level citation mapping; requires human validation"
+            }
+        }
+    ]
+}

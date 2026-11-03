@@ -1,0 +1,7 @@
+test_id,category,status,passed,generation_status,expected_abstention,detected_abstention,abstention_correct,citation_total,valid_citations,invalid_citations,citation_accuracy,retrieval_time_seconds,generation_latency_seconds,total_time_seconds,manual_review_required
+TC01,Phishing,ERROR,False,failed,False,False,True,0,0,0,,0.74,116.52,117.26,True
+TC02,MFA,PASSED - MANUAL REVIEW REQUIRED,True,success,False,False,True,3,3,0,1.0,0.67,229.94,230.61,True
+TC03,Password Security,PASSED - MANUAL REVIEW REQUIRED,True,success,False,False,True,4,4,0,1.0,1.05,228.63,229.68,True
+TC04,Incident Response,PASSED - MANUAL REVIEW REQUIRED,True,success,False,False,True,5,5,0,1.0,1.22,213.47,214.69,True
+TC05,Account Compromise,ERROR,False,failed,True,False,False,0,0,0,,1.93,102.38,104.31,True
+TC06,Social Media Fraud,ERROR,False,failed,False,False,True,0,0,0,,1.26,97.8,99.06,True

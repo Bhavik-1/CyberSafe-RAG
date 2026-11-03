@@ -1,0 +1,60 @@
+{
+    "model": "gemini-3.8-flash",
+    "strategy": "fixed",
+    "top_k_context": 5,
+    "max_output_tokens": 700,
+    "thinking_level": "low",
+    "generated_at": "2026-10-30T11:01:42.247931+00:00",
+    "results": [
+        {
+            "query": "What should I do if I receive a phishing email?",
+            "answer": "Answer:\nBased on the provided evidence, here are the actions you should take if you receive a phishing email:\n\n1. **Do not react to urgent messages or promotional offers:** Never react to messages displaying urgency, and do not trust promotional offers that seem \"too good to be true\" [Evidence 1, p. 4; Evidence 4, p. 4].\n2. **Do not share sensitive details:** Never provide sensitive details like passwords or PINs via email or text [Evidence 2, p. 4].\n3. **Be cautious with links and attachments:** \n   - Do not click on any links or attachments from suspicious emails received from strangers [Evidence 2, p. 4; Evidence 5, p. 7].\n   - Carefully check and verify the URL before clicking [Evidence 1, p. 4; Evidence 4, p. 4].\n   - Expand and verify shortened URLs before clicking on them [Evidence 2, p. 4; Evidence 5, p. 7].\n4. **Inspect the email details:**\n   - Verify the sender and check the domain name in the sender's email address [Evidence 5, p. 7].\n   - Verify the email addresses in messages addressed to generic recipients [Evidence 1, p. 4].\n   - Look for typing errors, poor grammar, spelling mistakes, or unprofessional language [Evidence 1, p. 4; Evidence 2, p. 4; Evidence 5, p. 7].\n5. **Report if victimized:** Do not hesitate to report to Law Enforcement Agencies if you become a victim of phishing [Evidence 1, p. 4].\n\n*(Note: Evidence does not specify internal organizational incident reporting procedures, such as notifying an IT or security team, focusing instead on individual user safety tips and reporting to law enforcement if victimized.)*\n\nSources:\n- Cyber Security Awareness Booklet | CERT-In | Page 4\n- Digital Safety Compass Handbook | CERT-In | Page 4\n- Cyber Security Handbook | CERT-In | Page 7",
+            "context_time": 0.0004,
+            "prompt_time": 0.0,
+            "api_latency": 134.66,
+            "total_time": 134.66,
+            "context_chunks": 5,
+            "status": "success"
+        },
+        {
+            "query": "How can I protect my online accounts using multi-factor authentication?",
+            "answer": "Answer:\nBased on the provided evidence, you can protect your online accounts using multi-factor authentication (MFA) by doing the following:\n\n1. **Enable Multi-Factor Authentication (MFA)** to add an extra layer of security to your accounts [Evidence 1, p. 10], [Evidence 4, p. 14].\n2. **Apply it to critical personal accounts**, specifically by enabling it on your emails, banking, and social media accounts [Evidence 2, p. 9], [Evidence 3, p. 7], [Evidence 5, p. 8].\n3. **Never share your One-Time Password (OTP)** over the phone or internet, as banks and financial institutions will never ask for it [Evidence 2, p. 9].\n\n*(Note: The provided evidence states that multi-factor authentication should be enabled across your accounts, but it does not contain technical instructions or step-by-step setup guides for configuring specific MFA methods.)*\n\nSources:\n- Cyber Security Handbook | CERT-In | Page 10\n- Cyber Security Awareness Booklet | CERT-In | Page 9\n- Cyber Security Handbook | CERT-In | Page 7\n- Cyber Security Awareness Booklet | CERT-In | Page 14\n- Cyber Security Awareness Booklet | CERT-In | Page 8",
+            "context_time": 0.001,
+            "prompt_time": 0.0,
+            "api_latency": 74.32,
+            "total_time": 74.32,
+            "context_chunks": 5,
+            "status": "success"
+        },
+        {
+            "query": "How should passwords be stored securely?",
+            "answer": "Answer:\nBased on the provided evidence, passwords should be stored securely using the following practices:\n\n1. **Never store in plaintext or encrypted form**: Passwords must never be stored in plain text [Evidence 1, p. 1]. In almost all circumstances, they should be securely hashed rather than encrypted [Evidence 2, p. 1], and alternative architectures should be used to avoid storing passwords in an encrypted form [Evidence 5, p. 2].\n2. **Use strong, slow, adaptive hashing algorithms**: Protect passwords using modern, slow, and memory-hard hashing algorithms such as Argon2id, bcrypt, or PBKDF2 [Evidence 1, p. 1; Evidence 2, p. 1]. Fast hashing algorithms like SHA-256 must not be used because they allow attackers to quickly make large numbers of guesses [Evidence 1, p. 1]. If using PBKDF2, configure it with a work factor of 600,000 or more and an internal hash function of HMAC-SHA-256 [Evidence 2, p. 1].\n3. **Apply a unique salt**: Add a unique salt to each password to stop attackers from utilizing precomputed lookup tables, such as rainbow tables [Evidence 1, p. 1; Evidence 4, p. 3].\n4. **Consider using a pepper for defense in depth**: \n   - A pepper can provide additional defense in depth [Evidence 2, p. 1].\n   - Unlike a salt, a pepper is shared across stored passwords, must not be public, and must not be stored along with the generated hash or in the password database [Evidence 4, p. 3].\n   - Peppers are secrets and should be stored separately in \"secrets vaults\" or Hardware Security Modules (HSMs) [Evidence 4, p. 3].\n\nSources:\n- Password Storage Cheat Sheet | OWASP | Page 1\n- Password Storage Cheat Sheet | OWASP | Page 2\n- Password Storage Cheat Sheet | OWASP | Page 3",
+            "context_time": 0.0016,
+            "prompt_time": 0.0,
+            "api_latency": 112.8,
+            "total_time": 112.8,
+            "context_chunks": 5,
+            "status": "success"
+        },
+        {
+            "query": "What are the steps involved in responding to a cybersecurity incident?",
+            "answer": "Answer:\nBased on the provided evidence, organizational incident response is integrated across operations using the NIST Cybersecurity Framework functions and involves the following steps and activities:\n\n1. **Preparation and Prevention**: Use the Govern, Identify, and Protect functions to prevent incidents, prepare to handle incidents that occur, reduce their impact, and improve practices [Evidence 2, p. 9]. Establish policies, documented procedures, defined roles/responsibilities, and guidelines for actions such as prioritization and recovery [Evidence 5, p. 17].\n2. **Detection and Reporting**: Discover incidents using detection technologies that automatically report confirmed incidents, or receive reports through monitored reporting mechanisms established for third parties [Evidence 2, p. 9; Evidence 3, p. 35].\n3. **Triage and Validation**: Perform a preliminary review of incident reports to verify that an incident occurred, and estimate the severity and level of urgency required to respond [Evidence 3, p. 35; Evidence 5, p. 17].\n4. **Coordination and Plan Execution**: When an incident is declared, execute plans in coordination with relevant third parties, consider designating an incident lead, contact incident response service providers if assistance is needed, and initiate other plans (such as business continuity or disaster recovery) [Evidence 3, p. 35].\n5. **Containment, Eradication, and Recovery**: Take appropriate action to manage, prioritize, contain, eradicate, and systematically recover from the incident to minimize data loss, theft, service disruptions, and overall impact [Evidence 1, p. 10; Evidence 2, p. 9].\n6. **Communications and Notifications**: Perform incident reporting, notification, and other incident-related communications [Evidence 2, p. 9].\n7. **Lessons Learned and Root Cause Analysis**: Analyze root causes and extract lessons learned. These lessons should often be shared as soon as they are identified (rather than waiting until recovery concludes) to support continuous improvement in cybersecurity risk management [Evidence 1, p. 10; Evidence 2, p. 9; Evidence 4, p. 12].\n\n*(Note: The provided evidence details organizational incident response; evidence for individual user incident response steps is not provided.)*\n\nSources:\n- Incident Response Recommendations | NIST | Page 9\n- Incident Response Recommendations | NIST | Page 10\n- Incident Response Recommendations | NIST | Page 12\n- Incident Response Recommendations | NIST | Page 17\n- Incident Response Recommendations | NIST | Page 35",
+            "context_time": 0.0013,
+            "prompt_time": 0.0,
+            "api_latency": 142.11,
+            "total_time": 142.11,
+            "context_chunks": 5,
+            "status": "success"
+        },
+        {
+            "query": "What should I do if my account has been compromised?",
+            "answer": "Answer:\nThe provided evidence is insufficient to give a complete step-by-step procedure for what an individual should do once an account is compromised. Specifically, direct recovery actions (such as changing passwords, revoking active sessions, or notifying administrators) are missing from the texts.\n\nHowever, the provided evidence notes the following relevant details:\n1. **Handling MFA and recovery:** When a user enters a correct password but fails MFA, it may indicate the password has been compromised; system guidance recommends prompting the user to try another form of MFA [Evidence 1, p. 4]. Additionally, systems must provide mechanisms for users to regain access if locked out without allowing attackers to bypass MFA (such as using single-use recovery codes generated during setup) [Evidence 5, p. 5].\n2. **Scam awareness:** Scammers may falsely claim that your bank or online accounts are hacked to cause panic; if in doubt, contact the organization directly using official channels and never share login details over the phone [Evidence 3, p. 9].\n3. **Organizational incident response:** Organizations should maintain incident response policies, processes, and procedures to govern their response to cybersecurity incidents, including management commitment, purpose, objectives, and scope [Evidence 2, p. 16].\n\nSources:\n- Multifactor Authentication Cheat Sheet | OWASP | Page 4\n- Incident Response Recommendations | NIST | Page 16\n- Digital Safety Compass Handbook | CERT-In | Page 9\n- Multifactor Authentication Cheat Sheet | OWASP | Page 5",
+            "context_time": 0.0012,
+            "prompt_time": 0.0,
+            "api_latency": 88.13,
+            "total_time": 88.13,
+            "context_chunks": 5,
+            "status": "success"
+        }
+    ]
+}

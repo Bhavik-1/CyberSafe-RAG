@@ -1,0 +1,57 @@
+[
+  {
+    "query": "What should I do if I receive a phishing email?",
+    "expected_points": [
+      "Do not click suspicious links or open suspicious attachments.",
+      "Verify the sender's email address and domain.",
+      "Look for spelling mistakes, poor grammar, and suspicious urgency.",
+      "Never share passwords, PINs, or sensitive information.",
+      "Report phishing incidents to the appropriate authorities when victimized."
+    ],
+    "must_abstain": false
+  },
+  {
+    "query": "How can I protect my online accounts using multi-factor authentication?",
+    "expected_points": [
+      "Enable multi-factor authentication on important accounts.",
+      "Prioritize email, banking, and social media accounts.",
+      "Never share OTPs.",
+      "Acknowledge that the available evidence does not provide detailed MFA setup instructions."
+    ],
+    "must_abstain": false
+  },
+  {
+    "query": "How should passwords be stored securely?",
+    "expected_points": [
+      "Do not store passwords in plaintext.",
+      "Use secure adaptive password hashing algorithms.",
+      "Suitable algorithms include Argon2id, bcrypt, and PBKDF2.",
+      "Use a unique salt for each password.",
+      "A pepper can provide additional defense in depth and must be stored separately."
+    ],
+    "must_abstain": false
+  },
+  {
+    "query": "What are the steps involved in responding to a cybersecurity incident?",
+    "expected_points": [
+      "Preparation and prevention.",
+      "Detection and reporting.",
+      "Triage and validation.",
+      "Coordination and incident response plan execution.",
+      "Containment, eradication, and recovery.",
+      "Incident communication and notifications.",
+      "Root cause analysis and lessons learned."
+    ],
+    "must_abstain": false
+  },
+  {
+    "query": "What should I do if my account has been compromised?",
+    "expected_points": [
+      "The retrieved evidence does not provide a complete individual account recovery procedure.",
+      "Relevant MFA recovery information may be provided.",
+      "Use official channels to verify suspicious claims.",
+      "Do not invent unsupported account recovery instructions."
+    ],
+    "must_abstain": true
+  }
+]
