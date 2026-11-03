@@ -42,7 +42,7 @@ CANDIDATE_K = 10
 FINAL_TOP_K = 5
 
 MAX_OUTPUT_TOKENS = 700
-THINKING_LEVEL = "minimal"
+THINKING_LEVEL = "low"
 
 DEFAULT_STRATEGY = "fixed"
 
@@ -1086,7 +1086,7 @@ RETRIEVED EVIDENCE:
             input=verification_prompt,
             generation_config={
                 "max_output_tokens": 1200,
-                "thinking_level": "minimal"
+                "thinking_level": THINKING_LEVEL
             }
         )
 
