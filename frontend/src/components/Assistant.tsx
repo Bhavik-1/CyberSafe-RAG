@@ -82,6 +82,13 @@ type Message = {
   claimVerification?: ClaimVerification;
 };
 
+function formatAssistantMarkdown(content: string) {
+  return content
+    .replace(/^\\s*Answer:\\s*/i, "### Answer\\n\\n")
+    .replace(/\\n\\s*Sources:\\s*/i, "\\n\\n### Sources\\n\\n")
+    .replace(/(\\[Evidence \\d+,\\s*p\\.\\s*\\d+\\])/g, "**$1**");
+}
+
 export default function Assistant() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [question, setQuestion] = useState("");
@@ -312,7 +319,7 @@ export default function Assistant() {
               </div>
             </div>
 
-            <span className="text-xs text-slate-500">Gemini powered</span>
+            {/* <span className="text-xs text-slate-500">Gemini powered</span> */}
           </div>
 
           {/* MESSAGES */}
@@ -382,34 +389,70 @@ export default function Assistant() {
                     >
                       {message.role === "assistant" ? (
                         <>
-                          <div className="rounded-xl bg-[#0b1424] border border-slate-800 p-5 sm:p-6">
-                            <div
-                              className="
-      prose prose-invert max-w-none
-      prose-p:text-slate-200
-      prose-p:leading-8
-      prose-p:my-3
-      prose-strong:text-cyan-300
-      prose-ul:my-4
-      prose-ul:space-y-3
-      prose-li:text-slate-200
-      prose-li:leading-7
-      prose-li:marker:text-cyan-400
-      prose-headings:text-cyan-300
-      prose-headings:font-semibold
-      prose-hr:border-slate-700
-      text-[14px] sm:text-[15px]
-    "
-                            >
-                              <ReactMarkdown remarkPlugins={[remarkBreaks]}>
-                                {message.content}
-                              </ReactMarkdown>
+                          <div className="overflow-hidden rounded-2xl border border-slate-700/80 bg-[#0b1424] shadow-lg shadow-black/10">
+                            <div className="flex items-center justify-between gap-3 border-b border-slate-700/70 bg-slate-800/35 px-5 py-3">
+                              <div className="flex items-center gap-2.5">
+                                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-400/10">
+                                  <Shield
+                                    size={17}
+                                    className="text-emerald-400"
+                                  />
+                                </div>
+                                <div>
+                                  <p className="text-sm font-semibold text-slate-100">
+                                    CyberSafe Response
+                                  </p>
+                                  <p className="mt-0.5 text-[11px] text-slate-500">
+                                    Guidance based on retrieved evidence
+                                  </p>
+                                </div>
+                              </div>
+                              <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-400/20 bg-emerald-400/5 px-2.5 py-1 text-[10px] font-semibold text-emerald-300">
+                                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                                Evidence grounded
+                              </span>
+                            </div>
+                            <div className="px-5 py-5 sm:px-6 sm:py-6">
+                              <div
+                                className="max-w-none text-[14px] sm:text-[15px] leading-7 text-slate-200
+                                 [&_h3]:mb-3 [&_h3]:mt-1 [&_h3]:text-base [&_h3]:font-semibold [&_h3]:tracking-tight [&_h3]:text-cyan-300
+                                 [&_p]:my-3 [&_p]:leading-7 [&_p:first-child]:mt-0 [&_p:last-child]:mb-0
+                                 [&_strong]:font-semibold [&_strong]:text-cyan-200
+                                 [&_ul]:my-4 [&_ul]:space-y-3 [&_ul]:pl-5
+                                 [&_ol]:my-4 [&_ol]:space-y-3 [&_ol]:pl-5
+                                 [&_li]:pl-1 [&_li]:leading-7 [&_li::marker]:text-cyan-400
+                                 [&_hr]:my-5 [&_hr]:border-slate-700
+                                 [&_blockquote]:my-4 [&_blockquote]:border-l-2 [&_blockquote]:border-cyan-400/60 [&_blockquote]:pl-4 [&_blockquote]:text-slate-300"
+                              >
+                                <ReactMarkdown
+                                  remarkPlugins={[remarkBreaks]}
+                                  components={{
+                                    ul: ({ children }) => (
+                                      <ul className="list-disc">{children}</ul>
+                                    ),
+                                    ol: ({ children }) => (
+                                      <ol className="list-decimal">
+                                        {children}
+                                      </ol>
+                                    ),
+                                    li: ({ children }) => (
+                                      <li>
+                                        <span className="pl-0.5">
+                                          {children}
+                                        </span>
+                                      </li>
+                                    ),
+                                  }}
+                                >
+                                  {formatAssistantMarkdown(message.content)}
+                                </ReactMarkdown>
+                              </div>
                             </div>
                           </div>
 
                           {message.citationValidation && (
                             <div
-                              className={`mt-4 rounded-xl border p-3 text-xs ${
+                              className={`mt-4 rounded-xl border p-4 text-xs shadow-sm ${
                                 message.citationValidation.valid
                                   ? "border-emerald-400/20 bg-emerald-400/5 text-emerald-300"
                                   : "border-amber-400/20 bg-amber-400/5 text-amber-300"
@@ -450,7 +493,7 @@ export default function Assistant() {
                           )}
 
                           {message.claimVerification && (
-                            <div className="mt-4 rounded-xl border border-slate-700 bg-slate-800/40 p-3 text-xs">
+                            <div className="mt-4 rounded-xl border border-slate-700/80 bg-slate-800/35 p-4 text-xs shadow-sm">
                               <div className="flex items-center justify-between gap-3">
                                 <div className="flex items-center gap-2 font-semibold text-slate-200">
                                   <Shield size={15} className="text-cyan-400" />
@@ -590,7 +633,7 @@ export default function Assistant() {
 
                       <p className="text-xs text-slate-500 mt-2">
                         Evidence will appear first, followed by the answer as
-                        Gemini generates it.
+                        the chatbot generates it.
                       </p>
                     </div>
                   </div>
